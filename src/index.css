@@ -108,4 +108,5 @@ font-family: 'Roboto Mono', monospace; */
 
   display: flex;
   flex-direction: column;
+  background-color: #060412;
 }

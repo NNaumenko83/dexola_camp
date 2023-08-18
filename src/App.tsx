@@ -1,27 +1,21 @@
 import Theme from "./Theme/Theme";
 import { Container } from "./components/Container/Container";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 
 function App() {
   return (
     <Theme>
       <>
-        <header>
-          <Container>
-            <p>Header</p>
-          </Container>
-        </header>
+        <Header />
         <Main>
           <Container>
             <p>Main</p>
           </Container>
         </Main>
-        <footer>
-          <Container>
-            <p>Footer</p>
-          </Container>
-        </footer>
       </>
+      <Footer />
     </Theme>
   );
 }

@@ -18,20 +18,29 @@ const theme = {
       tablet: "112px",
       mobile: "48px",
     },
+
     subTitle: {
       web: "24px",
       tablet: "20px",
       mobile: "16px",
     },
+
     body: {
       web: "18px",
       tablet: "16px",
       mobile: "14px",
     },
   },
+
   fontWeights: {
     normal: 400,
     medium: 500,
+  },
+
+  breakpoints: {
+    web: "1440px",
+    tablet: "768px",
+    mobile: "480px",
   },
 };
 
