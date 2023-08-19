@@ -10,6 +10,7 @@ const theme = {
 		lightGrey: "#B3B3B3",
 		background: "#060412",
 		warningRose: "#e2e2e2",
+		//
 		buttonTextColor: "#FFFFFF",
 		buttonBackgroundColor: "#272A2E",
 		buttonHoverBackgroundColor: "#B3B3B3",

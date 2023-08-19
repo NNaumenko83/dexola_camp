@@ -6,7 +6,7 @@ export const Link = styled.a`
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
+	border-radius: 22%;
 	color: ${props => props.theme.colors.socMediaIcons};
 
 	transition: color 250ms linear;
