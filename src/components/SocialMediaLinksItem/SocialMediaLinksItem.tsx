@@ -1,14 +1,17 @@
 import React from "react";
 import Icon from "../Icon/Icon";
+import { Link } from "./SocialMediaLinksItem.styled";
 
-type Props = {
+type IProps = {
 	name: string;
 };
 
-export const SocialMediaLinksItem: React.FC<Props> = ({ name }) => {
+export const SocialMediaLinksItem: React.FC<IProps> = ({ name }) => {
 	return (
 		<li>
-			<Icon name={name} width={32} height={32} />
+			<Link href="#" target="_blank" rel="noopener nofollow noreferrer">
+				<Icon name={name} width={32} height={32} />
+			</Link>
 		</li>
 	);
 };

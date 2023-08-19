@@ -48,6 +48,7 @@ const theme = {
 	breakpoints: {
 		web: "1440px",
 		tablet: "768px",
+		maxMobile: "767px",
 		mobile: "480px",
 	},
 };
