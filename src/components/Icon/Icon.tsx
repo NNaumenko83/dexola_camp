@@ -1,5 +1,6 @@
 import React from "react";
 import icons from "../../assets/symbol-defs_min.svg";
+import { StyledIcon } from "./Icon.styled";
 
 interface IconProps {
 	name: string;
@@ -8,9 +9,9 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ name, width = 24, height = 24, ...rest }) => (
-	<svg width={width} height={height} {...rest}>
+	<StyledIcon width={width} height={height} {...rest}>
 		<use href={icons + `#${name}`} />
-	</svg>
+	</StyledIcon>
 );
 
 export default Icon;

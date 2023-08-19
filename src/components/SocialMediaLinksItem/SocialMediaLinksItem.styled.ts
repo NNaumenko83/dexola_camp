@@ -7,9 +7,12 @@ export const Link = styled.a`
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
+	color: ${props => props.theme.colors.socMediaIcons};
+
+	transition: color 250ms linear;
 
 	&:hover,
 	&:focus {
-		color: red;
+		color: ${props => props.theme.colors.socMediaIconsHover};
 	}
 `;

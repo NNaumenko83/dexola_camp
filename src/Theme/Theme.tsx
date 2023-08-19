@@ -13,6 +13,8 @@ const theme = {
 		buttonTextColor: "#FFFFFF",
 		buttonBackgroundColor: "#272A2E",
 		buttonHoverBackgroundColor: "#B3B3B3",
+		socMediaIcons: "#FFFFFF",
+		socMediaIconsHover: "#2F2F2F",
 	},
 
 	fontSizes: {
