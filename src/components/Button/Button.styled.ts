@@ -2,4 +2,11 @@ import { styled } from "styled-components";
 
 export const StyledButton = styled.button`
 	display: flex;
+
+	color: ${props => props.theme.colors.buttonTextColor};
+	background-color: ${props => props.theme.colors.buttonBackgroundColor};
+	transition: all 300ms linear;
+	&:hover {
+		background-color: ${props => props.theme.colors.buttonHoverBackgroundColor};
+	}
 `;

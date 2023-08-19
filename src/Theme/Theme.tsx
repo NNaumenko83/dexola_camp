@@ -11,26 +11,32 @@ const theme = {
 		background: "#060412",
 		warningRose: "#e2e2e2",
 		buttonTextColor: "#FFFFFF",
-		buttonBackgroundColorColor: "#B3B3B3",
+		buttonBackgroundColor: "#272A2E",
+		buttonHoverBackgroundColor: "#B3B3B3",
 	},
 
 	fontSizes: {
 		title: {
-			web: "140px",
-			tablet: "112px",
-			mobile: "48px",
+			web: "8.75rem",
+			tablet: "7rem",
+			mobile: "3rem",
 		},
 
 		subTitle: {
-			web: "24px",
-			tablet: "20px",
-			mobile: "16px",
+			web: "1.5rem",
+			tablet: "1.25rem",
+			mobile: "1rem",
 		},
 
 		body: {
-			web: "18px",
-			tablet: "16px",
-			mobile: "14px",
+			web: "1.125rem",
+			tablet: "1rem",
+			mobile: "0.875rem",
+		},
+
+		button: {
+			small: "0.875rem",
+			medium: "1rem",
 		},
 	},
 
