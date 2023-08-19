@@ -21,9 +21,7 @@
     <symbol id="arrow_icon" viewBox="0 0 32 32">
     <path fill="none" stroke="#fff" style="stroke: var(--color5, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.8235" d="M14.995 25.726l16.177-16.314M31.172 9.412v15.661M31.172 9.412h-15.529"></path>
     </symbol>
-    <symbol id="arrow" viewBox="0 0 32 32">
-    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M2.811 28.121l24.999-25.212M27.81 2.909v24.204M27.81 2.909h-23.999"></path>
-    </symbol>
+
       
   </defs>
 </svg>
