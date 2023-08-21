@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const ContainerStyled = styled.div`
 	outline: 1px solid red;
 
-	max-width: 23.75rem;
+	max-width: 21.6875rem;
 	padding-left: 0.625rem;
 	padding-right: 0.625rem;
 	margin: 0 auto;

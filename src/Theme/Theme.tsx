@@ -10,12 +10,15 @@ const theme = {
 		lightGrey: "#B3B3B3",
 		background: "#060412",
 		warningRose: "#e2e2e2",
-		//
+		//ButtonColors
 		buttonTextColor: "#FFFFFF",
 		buttonBackgroundColor: "#272A2E",
 		buttonHoverBackgroundColor: "#B3B3B3",
+		// SocmediaColors
 		socMediaIcons: "#FFFFFF",
 		socMediaIconsHover: "#2F2F2F",
+		// Hero title color
+		heroTitle: "#FFFFFF",
 	},
 
 	fontSizes: {
