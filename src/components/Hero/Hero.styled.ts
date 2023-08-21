@@ -11,8 +11,11 @@ const titleAnimation = keyframes`
       0% {
        transform: translateX(100%);
       }
+      50%{
+            transform: translateX(0);
+      }
    100% {
-       ransform: translateX(-100%);
+       transform: translateX(-100%);
         }
         `;
 
@@ -23,10 +26,11 @@ export const HeroTitle = styled.h1`
 	font-size: 7.5rem;
 	font-weight: 500;
 	line-height: 1.254;
+
 	text-transform: uppercase;
 
 	animation-name: ${titleAnimation};
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: normal;
