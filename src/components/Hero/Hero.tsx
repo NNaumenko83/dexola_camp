@@ -5,31 +5,23 @@ export const Hero = () => {
 	return (
 		<HeroContainer>
 			<ImagesList>
-				{heroImages.map((item, index) => (
+				{heroImages.map((images, index) => (
 					<ImagesContainer key={index}>
-						<ImageWrapper>
-							<Image
-								srcSet={(item[0][0], item[0][1])}
-								src={item[0][0]}
-								alt="Розробка інтерфейсу для смартфонів"
-								// width="370"
-								// height="294"
-							/>
-						</ImageWrapper>
-
-						<ImageWrapper>
-							<Image
-								srcSet={(item[1][0], item[1][1])}
-								src={item[0][1]}
-								alt="Розробка інтерфейсу для смартфонів"
-								// width="370"
-								// height="294"
-							/>
-						</ImageWrapper>
+						{images.map((imageSrcSet, subIndex) => (
+							<ImageWrapper key={subIndex}>
+								<Image
+									srcSet={`${imageSrcSet[0]} ${imageSrcSet[1]}`}
+									src={imageSrcSet[0]}
+									alt="Розробка інтерфейсу для смартфонів"
+									// width="370"
+									// height="294"
+								/>
+							</ImageWrapper>
+						))}
 					</ImagesContainer>
 				))}
 			</ImagesList>
-
+			{/* Інші елементи */}
 			<HeroTitle>Dexola camp</HeroTitle>
 		</HeroContainer>
 	);

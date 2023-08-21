@@ -7,6 +7,15 @@ export const HeroContainer = styled.section`
 	overflow: hidden;
 `;
 
+const titleAnimation = keyframes`
+      0% {
+       transform: translateX(100%);
+      }
+   100% {
+       ransform: translateX(-100%);
+        }
+        `;
+
 export const HeroTitle = styled.h1`
 	color: ${props => props.theme.colors.heroTitle};
 	width: 795px;
@@ -15,24 +24,30 @@ export const HeroTitle = styled.h1`
 	font-weight: 500;
 	line-height: 1.254;
 	text-transform: uppercase;
+
+	animation-name: ${titleAnimation};
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
 `;
 
 const fadeImageAnimation = keyframes`
       0% {
         opacity: 0;
       }
-      15% {
+      5% {
         opacity: 1;
       }
       20% {
-        opacity: 0;
+        opacity: 1
       }
-      95% {
+      25% {
           opacity: 0;
         }
 
       100% {
-            opacity: 1;
+            opacity: 0;
         }
         `;
 
@@ -41,7 +56,7 @@ export const ImagesContainer = styled.li`
 	width: 100%;
 	height: 100%;
 	display: flex;
-
+	opacity: 0;
 	animation-name: ${fadeImageAnimation};
 	animation-duration: 40s;
 	animation-timing-function: linear;
@@ -60,25 +75,21 @@ export const ImagesList = styled.ul`
 
 	:nth-child(2) {
 		z-index: 2;
-		opacity: 0;
 		animation-delay: 8s;
 	}
 
 	:nth-child(3) {
 		z-index: 3;
-		opacity: 0;
 		animation-delay: 16s;
 	}
 
 	:nth-child(4) {
 		z-index: 4;
-		opacity: 0;
 		animation-delay: 24s;
 	}
 
 	:nth-child(5) {
 		z-index: 5;
-		opacity: 0;
 		animation-delay: 32s;
 	}
 `;
