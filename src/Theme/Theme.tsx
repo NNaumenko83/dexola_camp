@@ -44,6 +44,8 @@ const theme = {
 			small: "0.875rem",
 			medium: "1rem",
 		},
+
+		heroTitle: { web: "21.25rem", tablet: "17.5rem", mobile: "7.5rem" },
 	},
 
 	fontWeights: {

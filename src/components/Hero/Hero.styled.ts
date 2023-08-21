@@ -3,6 +3,7 @@ import { keyframes, styled } from "styled-components";
 export const HeroContainer = styled.section`
 	padding: 0.25rem 0;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
 `;
@@ -21,10 +22,10 @@ const titleAnimation = keyframes`
 
 export const HeroTitle = styled.h1`
 	color: ${props => props.theme.colors.heroTitle};
-	width: 795px;
+	width: 49.6875rem;
 	font-family: Kanit, sans-serif;
-	font-size: 7.5rem;
-	font-weight: 500;
+	font-size: ${props => props.theme.fontSizes.heroTitle.mobile};
+	font-weight: ${props => props.theme.fontWeights.medium};
 	line-height: 1.254;
 
 	text-transform: uppercase;
@@ -34,6 +35,12 @@ export const HeroTitle = styled.h1`
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: normal;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		font-size: ${props => props.theme.fontSizes.heroTitle.tablet};
+		width: 1900px;
+		animation-duration: 15s;
+	}
 `;
 
 const fadeImageAnimation = keyframes`
@@ -72,6 +79,8 @@ export const ImagesList = styled.ul`
 	width: 100%;
 	height: 19.4375rem;
 	position: relative;
+	margin: 0 auto;
+	border: 1px solid red;
 
 	:nth-child(1) {
 		z-index: 1;
@@ -96,10 +105,14 @@ export const ImagesList = styled.ul`
 		z-index: 5;
 		animation-delay: 32s;
 	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		width: 29.1875rem;
+	}
 `;
 
 export const ImageWrapper = styled.div`
-	/* flex-basis: 50%; */
+	flex-basis: 50%;
 `;
 
 export const Image = styled.img`
