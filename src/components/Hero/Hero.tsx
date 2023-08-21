@@ -1,6 +1,7 @@
 import { heroImages } from "../../constans/heroImages";
+
+import { HeroContainer, TitleHero, ImageWrapper, ImagesList, ImagesContainer, Image, TextWrapper } from "./Hero.styled";
 import { Text } from "../Text/Text";
-import { HeroContainer, HeroTitle, ImageWrapper, ImagesList, ImagesContainer, Image } from "./Hero.styled";
 
 export const Hero = () => {
 	return (
@@ -23,11 +24,13 @@ export const Hero = () => {
 				))}
 			</ImagesList>
 
-			<HeroTitle>Dexola camp</HeroTitle>
-			<Text>
-				Prepare to be transported beyond the boundaries of traditional gaming with the StarRunner Ecosystem – the
-				beating heart that drives the adrenaline-charged galactic P2E odyssey of 'StarRunner.'
-			</Text>
+			<TitleHero>Dexola camp</TitleHero>
+			<TextWrapper>
+				<Text>
+					Prepare to be transported beyond the boundaries of traditional gaming with the StarRunner Ecosystem – the
+					beating heart that drives the adrenaline-charged galactic P2E odyssey of 'StarRunner.'
+				</Text>
+			</TextWrapper>
 		</HeroContainer>
 	);
 };

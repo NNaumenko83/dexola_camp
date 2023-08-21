@@ -2,10 +2,22 @@ import { keyframes, styled } from "styled-components";
 
 export const HeroContainer = styled.section`
 	padding: 0.25rem 0;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+	display: grid;
+
+	grid-template-areas:
+		"images"
+		"title"
+		"text";
+	grid-template-columns: 100%;
+
 	overflow: hidden;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		grid-template-columns: 45.8125rem 29.1875rem;
+		grid-template-areas:
+			"text images"
+			"title title";
+	}
 `;
 
 const titleAnimation = keyframes`
@@ -20,7 +32,9 @@ const titleAnimation = keyframes`
         }
         `;
 
-export const HeroTitle = styled.h1`
+export const TitleHero = styled.h1`
+	grid-area: title;
+
 	color: ${props => props.theme.colors.heroTitle};
 	width: 49.6875rem;
 	font-family: Kanit, sans-serif;
@@ -76,11 +90,12 @@ export const ImagesContainer = styled.li`
 `;
 
 export const ImagesList = styled.ul`
+	grid-area: images;
+
 	width: 100%;
 	height: 19.4375rem;
 	position: relative;
 	margin: 0 auto;
-	border: 1px solid red;
 
 	:nth-child(1) {
 		z-index: 1;
@@ -107,6 +122,10 @@ export const ImagesList = styled.ul`
 	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		width: 43.5rem;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		width: 29.1875rem;
 	}
 `;
@@ -121,4 +140,14 @@ export const Image = styled.img`
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
+`;
+
+export const TextWrapper = styled.div`
+	grid-area: text;
+	display: flex;
+	align-items: flex-end;
+	outline: 1px solid red;
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		padding: 159px 70px 56px 20px;
+	}
 `;
