@@ -5,7 +5,9 @@ export const TitleWrapper = styled.div`
 	justify-content: space-between;
 `;
 
-export const SubTitleWrapper = styled.div`
+export const TextAndCardsContainer = styled.div`
 	display: flex;
-	gap: 1rem;
+	flex-direction: column;
+
+	gap: 1.5rem;
 `;

@@ -103,26 +103,26 @@ export const ImagesList = styled.ul`
 	position: relative;
 	margin: 0 auto;
 
-	:nth-child(1) {
+	& :nth-child(1) {
 		z-index: 1;
 	}
 
-	:nth-child(2) {
+	& :nth-child(2) {
 		z-index: 2;
 		animation-delay: 8s;
 	}
 
-	:nth-child(3) {
+	& :nth-child(3) {
 		z-index: 3;
 		animation-delay: 16s;
 	}
 
-	:nth-child(4) {
+	& :nth-child(4) {
 		z-index: 4;
 		animation-delay: 24s;
 	}
 
-	:nth-child(5) {
+	& :nth-child(5) {
 		z-index: 5;
 		animation-delay: 32s;
 	}
@@ -140,19 +140,11 @@ export const ImageWrapper = styled.div`
 	flex-basis: 50%;
 `;
 
-export const Image = styled.img`
-	display: block;
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	object-position: center;
-`;
-
 export const TextWrapper = styled.div`
 	grid-area: text;
 	display: flex;
 	align-items: flex-end;
-	outline: 1px solid red;
+
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		padding: 9.9375rem 4.375rem 3.5rem 1.25rem;
 	}

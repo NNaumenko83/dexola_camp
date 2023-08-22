@@ -23,6 +23,8 @@ const theme = {
 		title: "#FFFFFF",
 		// Subtitle color
 		subtitle: "#FFFFFF",
+		// Card border color
+		borderCard: "#09237E",
 	},
 
 	fontSizes: {
