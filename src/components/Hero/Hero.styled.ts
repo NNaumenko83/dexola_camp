@@ -52,7 +52,13 @@ export const TitleHero = styled.h1`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		font-size: ${props => props.theme.fontSizes.heroTitle.tablet};
-		width: 1900px;
+		width: 118.75rem;
+		animation-duration: 15s;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		font-size: ${props => props.theme.fontSizes.heroTitle.web};
+		width: 140.8125rem;
 		animation-duration: 15s;
 	}
 `;
@@ -148,6 +154,6 @@ export const TextWrapper = styled.div`
 	align-items: flex-end;
 	outline: 1px solid red;
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
-		padding: 159px 70px 56px 20px;
+		padding: 9.9375rem 4.375rem 3.5rem 1.25rem;
 	}
 `;
