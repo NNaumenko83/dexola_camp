@@ -12,7 +12,7 @@ export const Hero = () => {
 						{images.map((imageSrcSet, subIndex) => (
 							<ImageWrapper key={subIndex}>
 								<Image
-									srcSet={`${imageSrcSet[0]} ${imageSrcSet[1]}`}
+									srcSet={(imageSrcSet[0], imageSrcSet[1])}
 									src={imageSrcSet[0]}
 									alt="Розробка інтерфейсу для смартфонів"
 									width="150px"
