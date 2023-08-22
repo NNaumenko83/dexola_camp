@@ -19,6 +19,8 @@ const theme = {
 		socMediaIconsHover: "#2F2F2F",
 		// Hero title color
 		heroTitle: "#FFFFFF",
+		// Subtitle color
+		subtitle: "#FFFFFF",
 	},
 
 	fontSizes: {
@@ -49,7 +51,7 @@ const theme = {
 	},
 
 	fontWeights: {
-		normal: 400,
+		// normal: 400,
 		medium: 500,
 	},
 
