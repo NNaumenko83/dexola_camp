@@ -19,6 +19,8 @@ const theme = {
 		socMediaIconsHover: "#2F2F2F",
 		// Hero title color
 		heroTitle: "#FFFFFF",
+		// Title color
+		title: "#FFFFFF",
 		// Subtitle color
 		subtitle: "#FFFFFF",
 	},
