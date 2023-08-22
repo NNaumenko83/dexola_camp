@@ -12,9 +12,6 @@ export const StyledButton = styled(Button)`
 	width: 8.5rem;
 	height: 2.5rem;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: 0.5rem;
 
 	padding: 0.625rem 1rem;

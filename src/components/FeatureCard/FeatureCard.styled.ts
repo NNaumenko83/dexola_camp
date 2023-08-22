@@ -31,9 +31,6 @@ export const StyledButton = styled(Button)`
 	/* height: 2.5rem; */
 	padding: 0.75rem 4.875rem;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: 6px;
 
 	padding: 0.625rem 1rem;
