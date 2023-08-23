@@ -10,7 +10,7 @@ export const HeroContainer = styled.section`
 		"text";
 	grid-template-columns: 100%;
 
-	overflow: hidden;
+	/* overflow: hidden; */
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		grid-template-columns: 45.8125rem 29.1875rem;
