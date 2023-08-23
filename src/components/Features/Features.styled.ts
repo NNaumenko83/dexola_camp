@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
+import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
 
-export const TitleWrapper = styled.div`
-	display: flex;
-	justify-content: space-between;
+export const TitleWrapperStyled = styled(TitleWrapper)`
+	margin-bottom: 2rem;
 `;
 
 export const TextAndCardsContainer = styled.div`

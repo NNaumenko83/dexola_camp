@@ -2,7 +2,8 @@ import { FeatureCardsList } from "../FeatureCardsList/FeatureCardsList";
 import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";
 import { Title } from "../Title/Title";
-import { TextAndCardsContainer, TitleWrapper, SubtitleAndTextWrapper } from "./Features.styled";
+import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
+import { TextAndCardsContainer, SubtitleAndTextWrapper } from "./Features.styled";
 
 export const Features = () => {
 	return (
