@@ -3,9 +3,13 @@ import { Button } from "../Button/Button";
 
 export const FeatureCardStyled = styled.li`
 	border: 1px solid ${props => props.theme.colors.borderCard};
+	display: flex;
+	flex-direction: column;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-		flex-basis: 200px;
+		flex-basis: calc(100% / 3);
+		font-size: ${props => props.theme.fontSizes.body.tablet};
+		letter-spacing: -0.02rem;
 	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
@@ -17,32 +21,47 @@ export const ImageWrapper = styled.div`
 
 	height: 14.5rem;
 	border-bottom: 1px solid ${props => props.theme.colors.borderCard};
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		height: 15rem;
+	}
 `;
 
 export const ThumbContainer = styled.div`
 	padding: 1rem 1rem 1.5rem 1rem;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		padding-bottom: 1rem;
+	}
 
 	& > :nth-child(1) {
 		margin-bottom: 1rem;
 	}
 	& > :nth-child(2) {
 		margin-bottom: 1.5rem;
+
+		@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+			margin-bottom: 1rem;
+		}
 	}
 `;
 
 export const SubTitleWrapper = styled.div`
 	display: flex;
 	gap: 1rem;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		flex-direction: column;
+		gap: 0.25rem;
+	}
 `;
 
 export const StyledButton = styled(Button)`
 	width: 100%;
 	/* height: 2.5rem; */
-	padding: 0.75rem 4.875rem;
+	padding: 0.75rem 4.5rem;
 
-	gap: 6px;
-
-	padding: 0.625rem 1rem;
+	gap: 0.375rem;
 
 	font-size: ${props => props.theme.fontSizes.button.medium};
 
@@ -52,8 +71,9 @@ export const StyledButton = styled(Button)`
 	letter-spacing: 0.0175rem;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-		width: 14.6875rem;
 		height: 3rem;
+		padding: 0.75rem 1.125rem;
+		gap: 0.4375rem;
 
 		font-size: ${props => props.theme.fontSizes.button.medium};
 		line-height: 1.5;
