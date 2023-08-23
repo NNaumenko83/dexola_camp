@@ -128,11 +128,9 @@ export const ImagesList = styled.ul`
 	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-		width: 43.5rem;
 	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
-		width: 29.1875rem;
 	}
 `;
 
@@ -148,4 +146,12 @@ export const TextWrapper = styled.div`
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		padding: 9.9375rem 4.375rem 3.5rem 1.25rem;
 	}
+`;
+
+export const Image = styled.img`
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
 `;

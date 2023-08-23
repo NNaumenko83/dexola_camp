@@ -1,8 +1,7 @@
 import { heroImages } from "../../constans/heroImages";
 
-import { HeroContainer, TitleHero, ImageWrapper, ImagesList, ImagesContainer, TextWrapper } from "./Hero.styled";
+import { HeroContainer, TitleHero, ImageWrapper, ImagesList, ImagesContainer, TextWrapper, Image } from "./Hero.styled";
 import { Text } from "../Text/Text";
-import { Image } from "../Image/Image.styled";
 
 export const Hero = () => {
 	return (

@@ -1,8 +1,15 @@
 import Icon from "../Icon/Icon";
-import { Image } from "../Image/Image.styled";
+
 import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";
-import { FeatureCardStyled, ImageWrapper, StyledButton, SubTitleWrapper, ThumbContainer } from "./FeatureCard.styled";
+import {
+	FeatureCardStyled,
+	ImageWrapper,
+	StyledButton,
+	SubTitleWrapper,
+	ThumbContainer,
+	Image,
+} from "./FeatureCard.styled";
 
 type IFeatureCardProps = {
 	images: string[];
