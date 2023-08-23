@@ -9,6 +9,7 @@ import {
 	SubTitleWrapper,
 	ThumbContainer,
 	Image,
+	TextWrapper,
 } from "./FeatureCard.styled";
 
 type IFeatureCardProps = {
@@ -33,7 +34,10 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ images, number, name,
 					<SubTitle>{number}</SubTitle>
 					<SubTitle>{name}</SubTitle>
 				</SubTitleWrapper>
-				<Text>{text}</Text>
+				<TextWrapper>
+					<Text>{text}</Text>
+				</TextWrapper>
+
 				<StyledButton type="button" onClick={onClick}>
 					<Icon name="arrow_icon" width={24} height={16} />
 					<p>discover now</p>

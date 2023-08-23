@@ -30,6 +30,10 @@ export const ImageWrapper = styled.div`
 export const ThumbContainer = styled.div`
 	padding: 1rem 1rem 1.5rem 1rem;
 
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		padding-bottom: 1rem;
 	}
@@ -87,4 +91,8 @@ export const Image = styled.img`
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
+`;
+
+export const TextWrapper = styled.div`
+	flex-grow: 1;
 `;
