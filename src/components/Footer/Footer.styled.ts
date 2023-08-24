@@ -30,7 +30,7 @@ export const FooterContainer = styled.div`
 		font-size: ${props => props.theme.fontSizes.body.web};
 		line-height: 1.33;
 		grid-template-areas: "design list copy";
-		border: 1px solid ${props => props.theme.colors.footerBordersColor};
+		/* border: 1px solid ${props => props.theme.colors.footerBordersColor}; */
 
 		&::before,
 		&::after {

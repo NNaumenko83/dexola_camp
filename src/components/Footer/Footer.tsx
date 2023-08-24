@@ -5,7 +5,7 @@ import { CopyrightText, DesignedByText, FooterContainer } from "./Footer.styled"
 export const Footer = () => {
 	return (
 		<footer>
-			<Container>
+			<Container footerborder={"footerborder"}>
 				<FooterContainer>
 					<SocialMediaLinksList />
 					<DesignedByText>Designed by Dexola - 2023</DesignedByText>

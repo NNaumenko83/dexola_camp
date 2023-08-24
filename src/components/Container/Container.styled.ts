@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const ContainerStyled = styled.div`
+export const ContainerStyled = styled.div<{ $footerborder?: string }>`
 	/* outline: 1px solid red; */
 
 	max-width: 46.4375rem;
@@ -19,5 +19,15 @@ export const ContainerStyled = styled.div`
 		max-width: 90rem;
 		padding-left: 7.5rem;
 		padding-right: 7.5rem;
+
+		border-top: ${props => {
+			console.log(props);
+			return props.$footerborder ? `1px solid ${props.theme.colors.footerBordersColor}` : "none";
+		}};
+
+		border-bottom: ${props => {
+			console.log(props);
+			return props.$footerborder ? `1px solid ${props.theme.colors.footerBordersColor}` : "none";
+		}};
 	}
 `;
