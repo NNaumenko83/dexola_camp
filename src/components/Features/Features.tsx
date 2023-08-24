@@ -15,6 +15,7 @@ export const Features = () => {
 			<TextAndCardsContainer>
 				<SubtitleAndTextWrapper>
 					<SubTitle>About StarRunner</SubTitle>
+
 					<Text>
 						The StarRunner Blockchain Ecosystem isn't a mere playground; it's a living, evolving entity that adapts to
 						the desires and creativity of its players.
