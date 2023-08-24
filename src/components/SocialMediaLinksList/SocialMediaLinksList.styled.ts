@@ -16,5 +16,6 @@ export const List = styled.ul`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		gap: 2.5rem;
+		justify-self: center;
 	}
 `;

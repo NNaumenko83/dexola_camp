@@ -29,8 +29,8 @@ export const FooterContainer = styled.div`
 		position: relative;
 		font-size: ${props => props.theme.fontSizes.body.web};
 		line-height: 1.33;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas: "design list copy";
-		/* border: 1px solid ${props => props.theme.colors.footerBordersColor}; */
 
 		&::before,
 		&::after {
@@ -43,11 +43,11 @@ export const FooterContainer = styled.div`
 		}
 
 		&::before {
-			left: 33.33%;
+			left: 25rem;
 		}
 
 		&::after {
-			left: 66.67%;
+			left: 50rem;
 		}
 	}
 `;
