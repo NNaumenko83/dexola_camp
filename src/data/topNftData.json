@@ -1,0 +1,37 @@
+[
+	{
+		"nftName": "Legendary Artifact",
+		"rarityLevel": "Legendary",
+		"totalGames": 189,
+		"gamesWon": 125,
+		"PriceETH": 2.5
+	},
+	{
+		"nftName": "Epic Warrior",
+		"rarityLevel": "Rare",
+		"totalGames": 134,
+		"gamesWon": 100,
+		"PriceETH": 1.5
+	},
+	{
+		"nftName": "Mystic Spellbook",
+		"rarityLevel": "Common",
+		"totalGames": 133,
+		"gamesWon": 43,
+		"PriceETH": 1.2
+	},
+	{
+		"nftName": "Common Potion",
+		"rarityLevel": "Heroic",
+		"totalGames": 87,
+		"gamesWon": 23,
+		"PriceETH": 2.8
+	},
+	{
+		"nftName": "Heroic Blade",
+		"rarityLevel": "Epic",
+		"totalGames": 56,
+		"gamesWon": 15,
+		"PriceETH": 0.5
+	}
+]
