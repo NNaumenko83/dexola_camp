@@ -111,6 +111,30 @@ export const ImagesList = styled.ul`
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		border-top: none;
 		border-bottom: none;
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100vw;
+			z-index: 99;
+			top: 0;
+			left: -53.4375rem;
+			right: 0;
+			height: 1px; /* Товщина полоски */
+			background-color: ${props => props.theme.colors.heroImagesListBorder}; /* Колір полоски */
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 99;
+			width: 100vw;
+			bottom: 0;
+			left: -53.4375rem;
+			right: 0;
+			height: 1px; /* Товщина полоски */
+			background-color: ${props => props.theme.colors.heroImagesListBorder}; /* Колір полоски */
+		}
 	}
 
 	& :nth-child(1) {

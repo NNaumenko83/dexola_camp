@@ -33,6 +33,8 @@ const theme = {
 		heroImagesBorder: "#204FFE",
 		// header bottom border
 		headerBottomColor: "#204FFE",
+		// footer borders
+		footerBordersColor: "#204FFE",
 	},
 
 	fontSizes: {

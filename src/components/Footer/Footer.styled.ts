@@ -26,9 +26,29 @@ export const FooterContainer = styled.div`
 	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		position: relative;
 		font-size: ${props => props.theme.fontSizes.body.web};
 		line-height: 1.33;
 		grid-template-areas: "design list copy";
+		border: 1px solid ${props => props.theme.colors.footerBordersColor};
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			background-color: ${props => props.theme.colors.footerBordersColor};
+		}
+
+		&::before {
+			left: 33.33%;
+		}
+
+		&::after {
+			left: 66.67%;
+		}
 	}
 `;
 
@@ -63,3 +83,5 @@ export const CopyrightText = styled.p`
 		justify-self: center;
 	}
 `;
+
+export const Border = styled.div``;
