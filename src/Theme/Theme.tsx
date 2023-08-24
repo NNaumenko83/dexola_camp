@@ -27,6 +27,12 @@ const theme = {
 		borderCard: "#09237E",
 		// Bottom border for title
 		titleBottomBorder: "#FFFFFF",
+		// Hero images list border
+		heroImagesListBorder: "#204FFE",
+		// Hero images list border
+		heroImagesBorder: "#204FFE",
+		// header bottom border
+		headerBottomColor: "#204FFE",
 	},
 
 	fontSizes: {

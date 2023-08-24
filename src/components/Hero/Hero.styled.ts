@@ -1,7 +1,6 @@
 import { keyframes, styled } from "styled-components";
 
 export const HeroContainer = styled.section`
-	padding: 0.25rem 0;
 	display: grid;
 
 	grid-template-areas:
@@ -93,6 +92,10 @@ export const ImagesContainer = styled.li`
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: normal;
+
+	& > :first-child {
+		border-right: 1px solid ${props => props.theme.colors.heroImagesBorder};
+	}
 `;
 
 export const ImagesList = styled.ul`
@@ -102,6 +105,13 @@ export const ImagesList = styled.ul`
 	height: 19.4375rem;
 	position: relative;
 	margin: 0 auto;
+
+	border: 1px solid ${props => props.theme.colors.heroImagesListBorder};
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		border-top: none;
+		border-bottom: none;
+	}
 
 	& :nth-child(1) {
 		z-index: 1;
@@ -126,12 +136,6 @@ export const ImagesList = styled.ul`
 		z-index: 5;
 		animation-delay: 32s;
 	}
-
-	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-	}
-
-	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
-	}
 `;
 
 export const ImageWrapper = styled.div`
@@ -142,6 +146,14 @@ export const TextWrapper = styled.div`
 	grid-area: text;
 	display: flex;
 	align-items: flex-end;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		width: 43rem;
+	}
+
+	@media screen and (min-width: 46.875rem) {
+		width: 100%;
+	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		padding: 9.9375rem 4.375rem 3.5rem 1.25rem;

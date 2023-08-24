@@ -29,4 +29,3 @@ export const StyledButton = styled(Button)`
 		letter-spacing: 0.02rem;
 	}
 `;
-
