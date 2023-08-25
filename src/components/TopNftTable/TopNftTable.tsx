@@ -2,11 +2,12 @@ import React from "react";
 
 import data from "../../data/topNftData.json";
 import { TopNftTableRow } from "../TopNftTableRow/TopNftTableRow";
+import { TableHead, TableStyled } from "./TopNftTable.styled";
 
 export const TopNftTable: React.FC = () => {
 	return (
-		<table>
-			<thead>
+		<TableStyled>
+			<TableHead>
 				<tr>
 					<th>NFT Name</th>
 					<th>Rarity Level</th>
@@ -14,12 +15,12 @@ export const TopNftTable: React.FC = () => {
 					<th>Games Won</th>
 					<th>Price (ETH)</th>
 				</tr>
-			</thead>
+			</TableHead>
 			<tbody>
 				{data.map((item, index) => (
 					<TopNftTableRow key={index} item={item} />
 				))}
 			</tbody>
-		</table>
+		</TableStyled>
 	);
 };

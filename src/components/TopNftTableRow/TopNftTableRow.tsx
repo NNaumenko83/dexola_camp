@@ -1,4 +1,5 @@
 import React from "react";
+import { TableRow, TableData } from "./TopNftTableRow.styled";
 
 interface TableRowProps {
 	item: {
@@ -12,12 +13,12 @@ interface TableRowProps {
 
 export const TopNftTableRow: React.FC<TableRowProps> = ({ item }) => {
 	return (
-		<tr>
-			<td>{item.nftName}</td>
-			<td>{item.rarityLevel}</td>
-			<td>{item.totalGames}</td>
-			<td>{item.gamesWon}</td>
-			<td>{item.PriceETH}</td>
-		</tr>
+		<TableRow>
+			<TableData>{item.nftName}</TableData>
+			<TableData>{item.rarityLevel}</TableData>
+			<TableData>{item.totalGames}</TableData>
+			<TableData>{item.gamesWon}</TableData>
+			<TableData>{item.PriceETH}</TableData>
+		</TableRow>
 	);
 };
