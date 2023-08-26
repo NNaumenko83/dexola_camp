@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 
 export const TableStyled = styled.table`
 	min-width: 100%;
+	border-collapse: collapse;
+	border: none;
 `;
 
 export const TableHead = styled.thead`
