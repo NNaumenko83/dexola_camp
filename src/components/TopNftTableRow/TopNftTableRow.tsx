@@ -12,6 +12,7 @@ import {
 import { Avarar } from "../Avatar/Avarar";
 
 interface TableRowProps {
+	indexItem: number;
 	item: {
 		numberItem: string;
 		nftName: string;
@@ -22,11 +23,11 @@ interface TableRowProps {
 	};
 }
 
-export const TopNftTableRow: React.FC<TableRowProps> = ({ item }) => {
+export const TopNftTableRow: React.FC<TableRowProps> = ({ item, indexItem }) => {
 	return (
 		<TableRow>
 			<TableDataAvatar>
-				<Avarar />
+				<Avarar indexItem={indexItem} />
 			</TableDataAvatar>
 			<TableDataName>
 				<NumberItem>{item.numberItem}&nbsp;</NumberItem>

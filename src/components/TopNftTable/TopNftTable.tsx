@@ -19,7 +19,7 @@ export const TopNftTable: React.FC = () => {
 			</TableHead>
 			<tbody>
 				{data.map((item, index) => (
-					<TopNftTableRow key={index} item={item} />
+					<TopNftTableRow key={index} item={item} indexItem={index} />
 				))}
 			</tbody>
 		</TableStyled>

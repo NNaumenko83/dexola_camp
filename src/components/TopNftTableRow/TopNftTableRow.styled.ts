@@ -4,7 +4,7 @@ export const TableRow = styled.tr`
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
 		display: grid;
 
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 80px 1fr 1fr;
 		grid-template-rows: repeat(4, 1fr);
 		/* width: 100%; */
 
@@ -45,6 +45,9 @@ export const NumberItem = styled.span`
 
 export const TableDataAvatar = styled(TableData)`
 	outline: 1px solid red;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 `;
 
 export const TableDataPrice = styled(TableData)`

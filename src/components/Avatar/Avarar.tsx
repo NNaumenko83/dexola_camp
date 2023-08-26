@@ -1,3 +1,20 @@
-export const Avarar = () => {
-	return <div>Avatar</div>;
+import { AvatarImage, AvatarWrapper } from "./Avatar.styled";
+import { nftAvatars } from "../../constans/avatars";
+
+interface IAvatarProps {
+	indexItem: number;
+}
+
+export const Avarar: React.FC<IAvatarProps> = ({ indexItem }) => {
+	return (
+		<AvatarWrapper>
+			<AvatarImage
+				srcSet={(nftAvatars[indexItem][0], nftAvatars[indexItem][1])}
+				src={nftAvatars[indexItem][0]}
+				alt="Розробка інтерфейсу для смартфонів"
+				width="150px"
+				height="311px"
+			/>
+		</AvatarWrapper>
+	);
 };
