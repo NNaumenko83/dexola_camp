@@ -35,6 +35,8 @@ const theme = {
 		headerBottomColor: "#204FFE",
 		// footer borders
 		footerBordersColor: "#204FFE",
+		// Table row second background
+		tableRowSecondBackground: "#080B27",
 	},
 
 	fontSizes: {

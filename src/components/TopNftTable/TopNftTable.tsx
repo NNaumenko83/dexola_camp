@@ -2,7 +2,7 @@ import React from "react";
 
 import data from "../../data/topNftData.json";
 import { TopNftTableRow } from "../TopNftTableRow/TopNftTableRow";
-import { TableHead, TableStyled } from "./TopNftTable.styled";
+import { TableBody, TableHead, TableStyled } from "./TopNftTable.styled";
 
 export const TopNftTable: React.FC = () => {
 	return (
@@ -17,11 +17,11 @@ export const TopNftTable: React.FC = () => {
 					<th>Price (ETH)</th>
 				</tr>
 			</TableHead>
-			<tbody>
+			<TableBody>
 				{data.map((item, index) => (
 					<TopNftTableRow key={index} item={item} indexItem={index} />
 				))}
-			</tbody>
+			</TableBody>
 		</TableStyled>
 	);
 };

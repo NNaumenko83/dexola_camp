@@ -5,14 +5,19 @@ export const TableRow = styled.tr`
 		display: grid;
 
 		grid-template-columns: 80px 1fr 1fr;
-		grid-template-rows: repeat(4, 1fr);
-		/* width: 100%; */
+		grid-template-rows: repeat(4, auto);
+
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 
 		& > :nth-child(1) {
 			grid-area: 2 / 1 / 5 / 2;
+			padding-bottom: 1rem;
 		}
 		& > :nth-child(2) {
 			grid-area: 1 / 1 / 2 / 3;
+			padding-top: 1rem;
+			padding-bottom: 0.75rem;
 		}
 		& > :nth-child(3) {
 			grid-area: 2 / 2 / 3 / 4;
@@ -22,9 +27,12 @@ export const TableRow = styled.tr`
 		}
 		& > :nth-child(5) {
 			grid-area: 4 / 2 / 5 / 4;
+			padding-bottom: 1rem;
 		}
 		& > :nth-child(6) {
 			grid-area: 1 / 3 / 2 / 4;
+			padding-top: 1rem;
+			padding-bottom: 0.75rem;
 		}
 	}
 `;
@@ -35,7 +43,15 @@ export const TableData = styled.td`
 	}
 `;
 
-export const TableDataName = styled(TableData)``;
+export const TableDataName = styled(TableData)`
+	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		color: ${props => props.theme.colors.subtitle};
+		font-family: Kanit;
+		font-size: ${props => props.theme.fontSizes.subTitle.mobile};
+		font-weight: ${props => props.theme.fontWeights.medium};
+		line-height: 1.4;
+	}
+`;
 
 export const NumberItem = styled.span`
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
@@ -44,16 +60,22 @@ export const NumberItem = styled.span`
 `;
 
 export const TableDataAvatar = styled(TableData)`
-	outline: 1px solid red;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 `;
 
 export const TableDataPrice = styled(TableData)`
-	outline: 1px solid blue;
 	display: flex;
 	justify-content: flex-end;
+
+	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		color: ${props => props.theme.colors.subtitle};
+		font-family: Kanit;
+		font-size: ${props => props.theme.fontSizes.subTitle.mobile};
+		font-weight: ${props => props.theme.fontWeights.medium};
+		line-height: 1.4;
+	}
 `;
 
 export const LabelText = styled.span`
