@@ -16,8 +16,10 @@ export const Features = () => {
 	return (
 		<section>
 			<TitleWrapper>
-				<Title>features</Title>
-				<Title>01</Title>
+				<Title>
+					<span>features</span>
+					<span>01</span>
+				</Title>
 			</TitleWrapper>
 			<Container>
 				<TextAndCardsContainer>
