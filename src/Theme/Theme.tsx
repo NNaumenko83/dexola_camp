@@ -37,6 +37,10 @@ const theme = {
 		footerBordersColor: "#204FFE",
 		// Table row second background
 		tableRowSecondBackground: "#080B27",
+		// Table head color
+		tableHead: "#FFFFFF",
+		// Table body color
+		tableBody: "#FFFFFF",
 	},
 
 	fontSizes: {
@@ -50,6 +54,11 @@ const theme = {
 			web: "1.5rem",
 			tablet: "1.25rem",
 			mobile: "1rem",
+		},
+
+		tableHead: {
+			web: "1.5rem",
+			tablet: "1.25rem",
 		},
 
 		body: {

@@ -37,11 +37,21 @@ export const TableRow = styled.tr`
 			padding-bottom: 0.75rem;
 		}
 	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		font-size: ${props => props.theme.fontSizes.body.tablet};
+		line-height: 1.31;
+		letter-spacing: -0.02rem;
+	}
 `;
 
 export const TableData = styled.td`
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
 		display: block;
+	}
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 `;
 
@@ -52,6 +62,12 @@ export const TableDataName = styled(TableData)`
 		font-size: ${props => props.theme.fontSizes.subTitle.mobile};
 		font-weight: ${props => props.theme.fontWeights.medium};
 		line-height: 1.4;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		min-width: 15rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 `;
 
@@ -65,18 +81,9 @@ export const TableDataAvatar = styled(TableData)`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-`;
 
-export const TableDataPrice = styled(TableData)`
-	display: flex;
-	justify-content: flex-end;
-
-	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
-		color: ${props => props.theme.colors.subtitle};
-		font-family: Kanit;
-		font-size: ${props => props.theme.fontSizes.subTitle.mobile};
-		font-weight: ${props => props.theme.fontWeights.medium};
-		line-height: 1.4;
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		display: table-cell;
 	}
 `;
 
@@ -96,5 +103,35 @@ export const TableDataInfo = styled(TableData)`
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
 		display: flex;
 		justify-content: space-between;
+	}
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+`;
+
+export const TableDataRarity = styled(TableDataInfo)`
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+`;
+
+export const TableDataPrice = styled(TableData)`
+	display: flex;
+	justify-content: flex-end;
+
+	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		color: ${props => props.theme.colors.subtitle};
+		font-family: Kanit;
+		font-size: ${props => props.theme.fontSizes.subTitle.mobile};
+		font-weight: ${props => props.theme.fontWeights.medium};
+		line-height: 1.4;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		display: table-cell;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 `;

@@ -8,6 +8,7 @@ import {
 	LabelText,
 	EthText,
 	TableDataInfo,
+	TableDataRarity,
 } from "./TopNftTableRow.styled";
 import { Avarar } from "../Avatar/Avarar";
 
@@ -33,10 +34,10 @@ export const TopNftTableRow: React.FC<TableRowProps> = ({ item, indexItem }) => 
 				<NumberItem>{item.numberItem}&nbsp;</NumberItem>
 				<span>{item.nftName}</span>
 			</TableDataName>
-			<TableDataInfo>
+			<TableDataRarity>
 				<LabelText>Rarity:</LabelText>
 				<span>{item.rarityLevel}</span>
-			</TableDataInfo>
+			</TableDataRarity>
 			<TableDataInfo>
 				<LabelText>Total games:</LabelText>
 				<span>{item.totalGames}</span>
