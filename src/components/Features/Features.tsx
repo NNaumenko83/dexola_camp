@@ -3,6 +3,7 @@ import { FeatureCardsList } from "../FeatureCardsList/FeatureCardsList";
 import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";
 import { Title } from "../Title/Title";
+import { TitleContainer } from "../TitleContainer/TitleContainer";
 import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
 import {
 	TextAndCardsContainer,
@@ -15,12 +16,15 @@ import {
 export const Features = () => {
 	return (
 		<section>
-			<TitleWrapper>
-				<Title>
-					<span>features</span>
-					<span>01</span>
-				</Title>
-			</TitleWrapper>
+			<TitleContainer>
+				<TitleWrapper>
+					<Title>
+						<span>features</span>
+						<span>01</span>
+					</Title>
+				</TitleWrapper>
+			</TitleContainer>
+
 			<Container>
 				<TextAndCardsContainer>
 					<SubtitleAndTextWrapper>

@@ -1,12 +1,13 @@
 import { Title } from "../Title/Title";
+import { TitleContainer } from "../TitleContainer/TitleContainer";
+
 import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
 import { TopNftTable } from "../TopNftTable/TopNftTable";
-import { ContainerStyledTop } from "./TopNfts.styled";
 
 export const TopNfts = () => {
 	return (
 		<section>
-			<ContainerStyledTop>
+			<TitleContainer>
 				<TitleWrapper>
 					<Title>
 						<span>Top NFTs</span>
@@ -15,7 +16,7 @@ export const TopNfts = () => {
 				</TitleWrapper>
 
 				<TopNftTable />
-			</ContainerStyledTop>
+			</TitleContainer>
 		</section>
 	);
 };
