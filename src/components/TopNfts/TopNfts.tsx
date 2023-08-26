@@ -1,20 +1,20 @@
-import { Container } from "../Container/Container";
-import { Title } from "../Title/Title";
 import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
 import { TopNftTable } from "../TopNftTable/TopNftTable";
+import { ContainerStyledTop, TitleNfs } from "./TopNfts.styled";
 
 export const TopNfts = () => {
 	return (
-		<Container>
-			<section>
+		<section>
+			<ContainerStyledTop>
 				<TitleWrapper>
-					<Title>Top NFTs</Title>
-					<Title>02</Title>
+					<TitleNfs>
+						<span>Top NFTs</span>
+						<span>02</span>
+					</TitleNfs>
 				</TitleWrapper>
-				<div>
-					<TopNftTable />
-				</div>
-			</section>
-		</Container>
+
+				<TopNftTable />
+			</ContainerStyledTop>
+		</section>
 	);
 };

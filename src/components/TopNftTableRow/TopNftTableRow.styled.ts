@@ -1,14 +1,16 @@
 import { styled } from "styled-components";
 
 export const TableRow = styled.tr`
+	border-bottom: 1px solid #204ffe;
+
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		padding-left: 24px;
+		padding-right: 24px;
+
 		display: grid;
 
 		grid-template-columns: 80px 1fr 1fr;
 		grid-template-rows: repeat(4, auto);
-
-		margin-top: 1rem;
-		margin-bottom: 1rem;
 
 		& > :nth-child(1) {
 			grid-area: 2 / 1 / 5 / 2;
