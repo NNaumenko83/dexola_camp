@@ -9,6 +9,7 @@ export const TopNftTable: React.FC = () => {
 		<TableStyled>
 			<TableHead>
 				<tr>
+					<th></th>
 					<th>NFT Name</th>
 					<th>Rarity Level</th>
 					<th>Total Games</th>
