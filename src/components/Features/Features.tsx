@@ -14,8 +14,8 @@ import {
 
 export const Features = () => {
 	return (
-		<Container>
-			<section>
+		<section>
+			<Container>
 				<TitleWrapper>
 					<Title>features</Title>
 					<Title>01</Title>
@@ -35,7 +35,7 @@ export const Features = () => {
 					</SubtitleAndTextWrapper>
 					<FeatureCardsList />
 				</TextAndCardsContainer>
-			</section>
-		</Container>
+			</Container>
+		</section>
 	);
 };
