@@ -19,7 +19,7 @@ export const TitleStyled = styled.h2`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		font-size: ${props => props.theme.fontSizes.title.web};
-		line-height: 1.15;
+		line-height: 1;
 	}
 `;
 
