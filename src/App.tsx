@@ -4,6 +4,7 @@ import { Features } from "./components/Features/Features";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
+import { JoinUs } from "./components/JoinUs/JoinUs";
 import { Main } from "./components/Main/Main";
 import { TopNfts } from "./components/TopNfts/TopNfts";
 
@@ -15,6 +16,7 @@ function App() {
 				<Hero />
 				<Features />
 				<TopNfts />
+				<JoinUs />
 			</Main>
 			<Footer />
 		</Theme>
