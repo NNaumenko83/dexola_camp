@@ -41,6 +41,14 @@ const theme = {
 		tableHead: "#FFFFFF",
 		// Table body color
 		tableBody: "#FFFFFF",
+		// Input border bottom
+		inputBorderBottom: "#FFFFFF",
+		// Input text color
+		inputTextColor: "#FFFFFF",
+		// Input text color
+		inputPlaceholder: "#B3B3B3",
+		// Error message
+		errorMessageColor: "#EB3795",
 	},
 
 	fontSizes: {
@@ -71,6 +79,8 @@ const theme = {
 			small: "0.875rem",
 			medium: "1rem",
 		},
+
+		error: "0.8125rem",
 
 		heroTitle: { web: "21.25rem", tablet: "17.5rem", mobile: "7.5rem" },
 	},
