@@ -1,4 +1,5 @@
 import { Container } from "../Container/Container";
+import { JoinUsForm } from "../JoinUsForm/JoinUsForm";
 
 import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";
@@ -28,6 +29,7 @@ export const JoinUs = () => {
 						cater to your needs. We've got you covered with top-notch solutions.
 					</Text>
 				</SubTitleAndTextWrapper>
+				<JoinUsForm />
 			</Container>
 		</section>
 	);
