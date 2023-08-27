@@ -22,6 +22,14 @@ export const TableHead = styled.thead`
 		font-weight: ${props => props.theme.fontWeights.medium};
 		line-height: 1.4;
 	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		height: 3.75rem;
+
+		font-size: ${props => props.theme.fontSizes.tableHead.web};
+		letter-spacing: -0.03rem;
+		line-height: 1.5;
+	}
 `;
 
 export const TableBody = styled.tbody`
@@ -41,8 +49,35 @@ export const TableBody = styled.tbody`
 `;
 
 export const TableHeadRow = styled.tr`
+	text-align: left;
+
 	& > :not(:last-child) {
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
+
+	& > :nth-child(2) {
+		padding-left: 1.5rem;
+	}
+
+	& > :last-child {
+		padding-left: 1.5rem;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		& > :not(:last-child) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+
+		& > :nth-child(2) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+
+		& > :last-child {
+			padding-left: 1.5rem;
+			padding-right: 1.4375rem;
+		}
 	}
 `;

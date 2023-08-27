@@ -4,8 +4,8 @@ export const TableRow = styled.tr`
 	border-bottom: 1px solid #204ffe;
 
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
-		padding-left: 24px;
-		padding-right: 24px;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 
 		display: grid;
 
@@ -43,6 +43,12 @@ export const TableRow = styled.tr`
 		line-height: 1.31;
 		letter-spacing: -0.02rem;
 	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		font-size: ${props => props.theme.fontSizes.body.web};
+		line-height: 1.33;
+		letter-spacing: -0.0225rem;
+	}
 `;
 
 export const TableData = styled.td`
@@ -69,6 +75,12 @@ export const TableDataName = styled(TableData)`
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		min-width: 28.0625rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
 `;
 
 export const NumberItem = styled.span`
@@ -84,6 +96,7 @@ export const TableDataAvatar = styled(TableData)`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		display: table-cell;
+		width: 4rem;
 	}
 `;
 
@@ -114,6 +127,12 @@ export const TableDataRarity = styled(TableDataInfo)`
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		min-width: 11.25rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 `;
 
