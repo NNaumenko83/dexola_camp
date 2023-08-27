@@ -21,12 +21,10 @@ export const ContainerStyled = styled.div<{ $footerborder?: string }>`
 		padding-right: 7.5rem;
 
 		border-top: ${props => {
-			console.log(props);
 			return props.$footerborder ? `1px solid ${props.theme.colors.footerBordersColor}` : "none";
 		}};
 
 		border-bottom: ${props => {
-			console.log(props);
 			return props.$footerborder ? `1px solid ${props.theme.colors.footerBordersColor}` : "none";
 		}};
 	}
