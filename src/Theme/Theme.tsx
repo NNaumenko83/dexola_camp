@@ -43,6 +43,10 @@ const theme = {
 		tableBody: "#FFFFFF",
 		// Input border bottom
 		inputBorderBottom: "#FFFFFF",
+		// Input Error border bottom
+		inputErrorBorderBottom: "#EB3795",
+		// Input Star Color
+		inputStarColor: "#EB3795",
 		// Input text color
 		inputTextColor: "#FFFFFF",
 		// Input text color

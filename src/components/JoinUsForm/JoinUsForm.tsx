@@ -1,10 +1,12 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { styled } from "styled-components";
 import * as Yup from "yup";
-import { InputWrapper } from "./JoinUsForm.styled";
+import { InputWrapper, StarInput } from "./JoinUsForm.styled";
 import { InputGroup } from "../InputGroup/InputGroup";
 import { InputLeftAddon } from "../InputLeftAddon/InputLeftAddon";
 import { InputRightAddon } from "../InputRightAddon/InputRightAddon";
+import { useState } from "react";
+import { EyeButton } from "../EyeButton/EyeButton";
 
 const FormStyled = styled(Form)`
 	border: 1px solid red;
@@ -44,14 +46,14 @@ const ErrorMessageStyled = styled(ErrorMessage)`
 `;
 
 const validationSchema = Yup.object().shape({
-	email: Yup.string().email("Invalid email address").required("Email is required"),
+	email: Yup.string().email("Is not valid email").required("Please complete this field"),
 	phone: Yup.string()
-		.matches(/^\+(?:[0-9] ?){6,14}[0-9]$/, "Invalid phone number")
-		.required("Phone number is required"),
-	password: Yup.string().required("Password is required").min(8, "Password must be at least 8 characters long"),
+		.matches(/^\+(?:[0-9] ?){6,14}[0-9]$/, "Is not valid phone number")
+		.required("Please complete this field"),
+	password: Yup.string().required("Please complete this field").min(8, "Password must be at least 8 characters long"),
 	confirmPassword: Yup.string()
-		.oneOf([Yup.ref("password"), undefined], "Passwords must match")
-		.required("Confirm password is required"),
+		.oneOf([Yup.ref("password"), undefined], "Cоnfirm password does not match the password entered")
+		.required("Please complete this field"),
 });
 
 const initialValues = {
@@ -62,6 +64,11 @@ const initialValues = {
 };
 
 export const JoinUsForm = () => {
+	const [showPassword, setShowPassword] = useState(false);
+	const [showConfirmPassword, setConfirmPassword] = useState(false);
+	const onShowPasswordButtonClick: () => void = () => setShowPassword(!showPassword);
+	const onShowConfirmPasswordButtonClick: () => void = () => setConfirmPassword(!showConfirmPassword);
+
 	const handleSubmit = (values: typeof initialValues) => {
 		console.log("values:", values);
 	};
@@ -79,7 +86,7 @@ export const JoinUsForm = () => {
 					<InputWrapper>
 						<InputGroup name="email">
 							<InputLeftAddon>
-								<span>*</span>
+								<StarInput>*</StarInput>
 							</InputLeftAddon>
 							<Input type="email" name="email" onBlur={handleBlur} placeholder="Enter email" />
 						</InputGroup>
@@ -89,7 +96,7 @@ export const JoinUsForm = () => {
 					<InputWrapper>
 						<InputGroup name="phone">
 							<InputLeftAddon>
-								<span>*</span>
+								<StarInput>*</StarInput>
 							</InputLeftAddon>
 							<Input type="tel" name="phone" onBlur={handleBlur} placeholder="+38(0__) ___ __ __" />
 						</InputGroup>
@@ -100,11 +107,16 @@ export const JoinUsForm = () => {
 					<InputWrapper>
 						<InputGroup name="password">
 							<InputLeftAddon>
-								<span>*</span>
+								<StarInput>*</StarInput>
 							</InputLeftAddon>
-							<Input type="password" name="password" onBlur={handleBlur} placeholder="Password" />
+							<Input
+								type={!showPassword ? "password" : "text"}
+								name="password"
+								onBlur={handleBlur}
+								placeholder="Password"
+							/>
 							<InputRightAddon>
-								<button type="button">Show</button>
+								<EyeButton onClick={onShowPasswordButtonClick} showPassword={showPassword} />
 							</InputRightAddon>
 						</InputGroup>
 
@@ -114,11 +126,16 @@ export const JoinUsForm = () => {
 					<InputWrapper>
 						<InputGroup name="confirmPassword">
 							<InputLeftAddon>
-								<span>*</span>
+								<StarInput>*</StarInput>
 							</InputLeftAddon>
-							<Input type="password" name="confirmPassword" onBlur={handleBlur} placeholder="Confirm Password" />
+							<Input
+								type={!showConfirmPassword ? "password" : "text"}
+								name="confirmPassword"
+								onBlur={handleBlur}
+								placeholder="Confirm Password"
+							/>
 							<InputRightAddon>
-								<button type="button">Show</button>
+								<EyeButton onClick={onShowConfirmPasswordButtonClick} showPassword={showConfirmPassword} />
 							</InputRightAddon>
 						</InputGroup>
 
