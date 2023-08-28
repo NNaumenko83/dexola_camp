@@ -16,7 +16,7 @@ const theme = {
 		buttonHoverBackgroundColor: "#B3B3B3",
 		// SocmediaColors
 		socMediaIcons: "#FFFFFF",
-		socMediaIconsHover: "#2F2F2F",
+		socMediaIconsHover: "#204FFE",
 		// Hero title color
 		heroTitle: "#FFFFFF",
 		// Title color
@@ -55,6 +55,10 @@ const theme = {
 		formBorderColor: "#204FFE",
 		// Error message
 		errorMessageColor: "#EB3795",
+		// Eye default color
+		eyeDefaultColor: "#FFFFFF",
+		// Eye hover color
+		eyeHoverColor: "#204FFE",
 	},
 
 	fontSizes: {
