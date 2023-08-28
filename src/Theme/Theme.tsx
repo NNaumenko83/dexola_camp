@@ -51,6 +51,8 @@ const theme = {
 		inputTextColor: "#FFFFFF",
 		// Input text color
 		inputPlaceholder: "#B3B3B3",
+		// Form border color
+		formBorderColor: "#204FFE",
 		// Error message
 		errorMessageColor: "#EB3795",
 	},

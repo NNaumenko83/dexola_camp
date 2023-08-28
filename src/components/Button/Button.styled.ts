@@ -4,6 +4,7 @@ export const StyledButton = styled.button`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-transform: uppercase;
 
 	color: ${props => props.theme.colors.buttonTextColor};
 	background-color: ${props => props.theme.colors.buttonBackgroundColor};

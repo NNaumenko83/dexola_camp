@@ -48,6 +48,9 @@ export const ThumbContainer = styled.div`
 			margin-bottom: 1rem;
 		}
 	}
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		padding: 1.5rem;
+	}
 `;
 
 export const SubTitleWrapper = styled.div`

@@ -1,20 +1,21 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { styled } from "styled-components";
 import * as Yup from "yup";
-import { InputWrapper, StarInput } from "./JoinUsForm.styled";
+import { InputWrapper, LeftAddonPhone, StarInput, StyledButton as Button } from "./JoinUsForm.styled";
 import { InputGroup } from "../InputGroup/InputGroup";
 import { InputLeftAddon } from "../InputLeftAddon/InputLeftAddon";
 import { InputRightAddon } from "../InputRightAddon/InputRightAddon";
 import { useState } from "react";
 import { EyeButton } from "../EyeButton/EyeButton";
+import Icon from "../Icon/Icon";
 
 const FormStyled = styled(Form)`
-	border: 1px solid red;
-	padding: 2.9375rem 2.5rem;
-	margin-bottom: 0.25rem;
+	border: 1px solid ${props => props.theme.colors.formBorderColor};
+	padding: 1.4375rem 1rem;
+	/* margin-bottom: 0.25rem; */
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 1rem;
 `;
 
 const Input = styled(Field)`
@@ -95,9 +96,10 @@ export const JoinUsForm = () => {
 
 					<InputWrapper>
 						<InputGroup name="phone">
-							<InputLeftAddon>
-								<StarInput>*</StarInput>
-							</InputLeftAddon>
+							<LeftAddonPhone>
+								<Icon name="flag-ukraine" width={30} height={30} />
+								<Icon name="arrow-up" width={24} height={24} />
+							</LeftAddonPhone>
 							<Input type="tel" name="phone" onBlur={handleBlur} placeholder="+38(0__) ___ __ __" />
 						</InputGroup>
 
@@ -142,9 +144,9 @@ export const JoinUsForm = () => {
 						<ErrorMessageStyled name="confirmPassword" component="div" />
 					</InputWrapper>
 
-					<button type="submit" disabled={!isValid}>
-						Submit
-					</button>
+					<Button type="submit" disabled={!isValid}>
+						Send it
+					</Button>
 				</FormStyled>
 			)}
 		</Formik>
