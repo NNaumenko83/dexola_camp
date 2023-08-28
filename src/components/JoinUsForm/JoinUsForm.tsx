@@ -1,7 +1,13 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { styled } from "styled-components";
 import * as Yup from "yup";
-import { InputWrapper, LeftAddonPhone, StarInput, StyledButton as Button } from "./JoinUsForm.styled";
+import {
+	InputWrapper,
+	LeftAddonPhone,
+	StarInput,
+	StyledButton as Button,
+	ButtonTextWrapper,
+} from "./JoinUsForm.styled";
 import { InputGroup } from "../InputGroup/InputGroup";
 import { InputLeftAddon } from "../InputLeftAddon/InputLeftAddon";
 import { InputRightAddon } from "../InputRightAddon/InputRightAddon";
@@ -16,6 +22,10 @@ const FormStyled = styled(Form)`
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		padding: 53px 40px;
+	}
 `;
 
 const Input = styled(Field)`
@@ -29,11 +39,23 @@ const Input = styled(Field)`
 	line-height: 1.33;
 	letter-spacing: 0.0225rem;
 
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		font-size: ${props => props.theme.fontSizes.body.tablet};
+		line-height: 1.5;
+		letter-spacing: 0.02rem;
+	}
+
 	&::placeholder {
 		color: ${props => props.theme.colors.inputPlaceholder};
 		font-size: ${props => props.theme.fontSizes.body.mobile};
-		line-height: 1.33;
-		letter-spacing: 0.0225rem;
+		line-height: 1.12;
+		letter-spacing: -0.0175rem;
+
+		@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+			font-size: ${props => props.theme.fontSizes.body.tablet};
+			line-height: 1.31;
+			letter-spacing: -0.02rem;
+		}
 	}
 `;
 
@@ -145,7 +167,7 @@ export const JoinUsForm = () => {
 					</InputWrapper>
 
 					<Button type="submit" disabled={!isValid}>
-						Send it
+						<ButtonTextWrapper>Send it</ButtonTextWrapper>
 					</Button>
 				</FormStyled>
 			)}
