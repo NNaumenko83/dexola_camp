@@ -2,6 +2,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { styled } from "styled-components";
 import * as Yup from "yup";
 import { InputWrapper } from "./JoinUsForm.styled";
+import { InputGroup } from "../InputGroup/InputGroup";
+import { InputLeftAddon } from "../InputLeftAddon/InputLeftAddon";
+import { InputRightAddon } from "../InputRightAddon/InputRightAddon";
 
 const FormStyled = styled(Form)`
 	border: 1px solid red;
@@ -22,8 +25,6 @@ const Input = styled(Field)`
 	font-size: ${props => props.theme.fontSizes.body.mobile};
 	line-height: 1.33;
 	letter-spacing: 0.0225rem;
-
-	border-bottom: 1px solid ${props => props.theme.colors.inputBorderBottom};
 
 	&::placeholder {
 		color: ${props => props.theme.colors.inputPlaceholder};
@@ -76,22 +77,51 @@ export const JoinUsForm = () => {
 			{({ isValid, handleBlur }) => (
 				<FormStyled autoComplete="off">
 					<InputWrapper>
-						<Input type="email" name="email" onBlur={handleBlur} placeholder="Enter email" />
+						<InputGroup name="email">
+							<InputLeftAddon>
+								<span>*</span>
+							</InputLeftAddon>
+							<Input type="email" name="email" onBlur={handleBlur} placeholder="Enter email" />
+						</InputGroup>
 						<ErrorMessageStyled name="email" component="div" />
 					</InputWrapper>
 
 					<InputWrapper>
-						<Input type="tel" name="phone" onBlur={handleBlur} placeholder="+38(0__) ___ __ __" />
+						<InputGroup name="phone">
+							<InputLeftAddon>
+								<span>*</span>
+							</InputLeftAddon>
+							<Input type="tel" name="phone" onBlur={handleBlur} placeholder="+38(0__) ___ __ __" />
+						</InputGroup>
+
 						<ErrorMessageStyled name="phone" component="div" />
 					</InputWrapper>
 
 					<InputWrapper>
-						<Input type="password" name="password" onBlur={handleBlur} placeholder="Password" />
+						<InputGroup name="password">
+							<InputLeftAddon>
+								<span>*</span>
+							</InputLeftAddon>
+							<Input type="password" name="password" onBlur={handleBlur} placeholder="Password" />
+							<InputRightAddon>
+								<button type="button">Show</button>
+							</InputRightAddon>
+						</InputGroup>
+
 						<ErrorMessageStyled name="password" component="div" />
 					</InputWrapper>
 
 					<InputWrapper>
-						<Input type="password" name="confirmPassword" onBlur={handleBlur} placeholder="Confirm Password" />
+						<InputGroup name="confirmPassword">
+							<InputLeftAddon>
+								<span>*</span>
+							</InputLeftAddon>
+							<Input type="password" name="confirmPassword" onBlur={handleBlur} placeholder="Confirm Password" />
+							<InputRightAddon>
+								<button type="button">Show</button>
+							</InputRightAddon>
+						</InputGroup>
+
 						<ErrorMessageStyled name="confirmPassword" component="div" />
 					</InputWrapper>
 
