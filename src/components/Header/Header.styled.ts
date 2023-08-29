@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 import { Button } from "../Button/Button";
 
 export const HeaderContainer = styled.div`
+	/* position: fixed;
+	z-index: 2; */
 	padding: 0.25rem 0;
 	display: flex;
 	justify-content: space-between;
@@ -28,4 +30,11 @@ export const StyledButton = styled(Button)`
 		line-height: 1.5;
 		letter-spacing: 0.02rem;
 	}
+`;
+
+export const HeaderStyled = styled.header`
+	position: fixed;
+	z-index: 50;
+	background-color: ${props => props.theme.colors.background};
+	width: 100%;
 `;

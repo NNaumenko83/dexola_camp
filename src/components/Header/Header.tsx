@@ -1,6 +1,6 @@
 import { Container } from "../Container/Container";
 import Icon from "../Icon/Icon";
-import { HeaderContainer, StyledButton as Button } from "./Header.styled";
+import { HeaderContainer, StyledButton as Button, HeaderStyled } from "./Header.styled";
 
 export const Header = () => {
 	const onClick = () => {
@@ -8,7 +8,7 @@ export const Header = () => {
 	};
 
 	return (
-		<header>
+		<HeaderStyled>
 			<Container>
 				<HeaderContainer>
 					<Icon name="logo" width={35} height={20} />
@@ -19,6 +19,6 @@ export const Header = () => {
 					</Button>
 				</HeaderContainer>
 			</Container>
-		</header>
+		</HeaderStyled>
 	);
 };
