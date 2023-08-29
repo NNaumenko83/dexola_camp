@@ -10,3 +10,7 @@ export const ContainerStyledTop = styled(ContainerStyled)`
 		padding-right: 0;
 	}
 `;
+
+export const TopNfcSection = styled.section`
+	margin-top: 5.5625rem;
+`;

@@ -11,11 +11,12 @@ import {
 	SubtitleWrapper,
 	TextWrapper,
 	LineBreak,
+	FeaturesSection,
 } from "./Features.styled";
 
 export const Features = () => {
 	return (
-		<section>
+		<FeaturesSection>
 			<TitleContainer>
 				<TitleWrapper>
 					<Title>
@@ -42,6 +43,6 @@ export const Features = () => {
 					<FeatureCardsList />
 				</TextAndCardsContainer>
 			</Container>
-		</section>
+		</FeaturesSection>
 	);
 };

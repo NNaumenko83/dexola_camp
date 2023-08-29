@@ -50,3 +50,7 @@ export const LineBreak = styled.br`
 		visibility: visible;
 	}
 `;
+
+export const FeaturesSection = styled.section`
+	margin-top: 148px;
+`;

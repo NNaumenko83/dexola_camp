@@ -3,10 +3,11 @@ import { TitleContainer } from "../TitleContainer/TitleContainer";
 
 import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
 import { TopNftTable } from "../TopNftTable/TopNftTable";
+import { TopNfcSection } from "./TopNfts.styled";
 
 export const TopNfts = () => {
 	return (
-		<section>
+		<TopNfcSection>
 			<TitleContainer>
 				<TitleWrapper>
 					<Title>
@@ -17,6 +18,6 @@ export const TopNfts = () => {
 
 				<TopNftTable />
 			</TitleContainer>
-		</section>
+		</TopNfcSection>
 	);
 };

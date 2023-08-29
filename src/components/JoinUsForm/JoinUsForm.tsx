@@ -26,6 +26,11 @@ const FormStyled = styled(Form)`
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		padding: 53px 40px;
 	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		width: 599px;
+		margin-top: 5.625rem;
+	}
 `;
 
 const Input = styled(Field)`

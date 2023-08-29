@@ -1,6 +1,4 @@
-import { Container } from "../Container/Container";
-
-
+import Icon from "../Icon/Icon";
 import { JoinUsForm } from "../JoinUsForm/JoinUsForm";
 
 import { SubTitle } from "../SubTitle/SubTitle";
@@ -8,11 +6,11 @@ import { Text } from "../Text/Text";
 import { Title } from "../Title/Title";
 import { TitleContainer } from "../TitleContainer/TitleContainer";
 import { TitleWrapper } from "../TitleWrapper/TitleWrapper";
-import { SubTitleAndTextWrapper } from "./JoinUs.styled";
+import { JoinUsContainer, JoinUsSection, SubTitleAndTextWrapper } from "./JoinUs.styled";
 
 export const JoinUs = () => {
 	return (
-		<section>
+		<JoinUsSection>
 			<TitleContainer>
 				<TitleWrapper>
 					<Title>
@@ -22,7 +20,7 @@ export const JoinUs = () => {
 				</TitleWrapper>
 			</TitleContainer>
 
-			<Container>
+			<JoinUsContainer>
 				<SubTitleAndTextWrapper>
 					<SubTitle>About StarRunner</SubTitle>
 
@@ -30,9 +28,11 @@ export const JoinUs = () => {
 						Join Our Community and Embark on a Journey of Opportunities. Discover the full range of our services that
 						cater to your needs. We've got you covered with top-notch solutions.
 					</Text>
+
+					<Icon name="long_arrow" width={64} height={64} visible={false} />
 				</SubTitleAndTextWrapper>
 				<JoinUsForm />
-			</Container>
-		</section>
+			</JoinUsContainer>
+		</JoinUsSection>
 	);
 };
