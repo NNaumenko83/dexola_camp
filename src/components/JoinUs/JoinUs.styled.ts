@@ -23,10 +23,16 @@ export const JoinUsContainer = styled(ContainerStyled)`
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		display: flex;
 		gap: 4.125rem;
-		margin-bottom: 7.0625rem;
 	}
 `;
 
 export const JoinUsSection = styled.section`
 	margin-top: 5.5625rem;
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		margin-top: 5.625rem;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		margin-top: 11.9375rem;
+	}
 `;

@@ -52,5 +52,9 @@ export const LineBreak = styled.br`
 `;
 
 export const FeaturesSection = styled.section`
-	margin-top: 148px;
+	margin-top: 9.25rem;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		margin-top: 8.8125rem;
+	}
 `;

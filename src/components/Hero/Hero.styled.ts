@@ -2,7 +2,6 @@ import { keyframes, styled } from "styled-components";
 
 export const HeroContainer = styled.section`
 	display: grid;
-	padding-top: 3.5625rem;
 
 	grid-template-areas:
 		"images"

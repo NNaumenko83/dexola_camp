@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const FooterContainer = styled.div`
-	padding-top: 4.0625rem;
 	padding-bottom: 2.125rem;
 
 	display: grid;
@@ -84,4 +83,12 @@ export const CopyrightText = styled.p`
 	}
 `;
 
-export const Border = styled.div``;
+export const FooterStyled = styled.footer`
+	margin-top: 4.3125rem;
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		margin-top: 4.75rem;
+	}
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		margin-top: 7.8125rem;
+	}
+`;
