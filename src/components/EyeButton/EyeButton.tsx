@@ -10,7 +10,7 @@ interface IEyeButtonProps {
 
 export const EyeButton: React.FC<IEyeButtonProps> = ({ onClick, showPassword }) => {
 	return (
-		<Button type="button" onClick={onClick}>
+		<Button type="button" onClick={onClick} aria-label="show password">
 			{showPassword ? (
 				<Icon name="eye-opened" width={24} height={24} />
 			) : (

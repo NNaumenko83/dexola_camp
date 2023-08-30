@@ -10,7 +10,7 @@ import { JoinUsContainer, JoinUsSection, SubTitleAndTextWrapper } from "./JoinUs
 
 export const JoinUs = () => {
 	return (
-		<JoinUsSection>
+		<JoinUsSection id="joinUs">
 			<TitleContainer>
 				<TitleWrapper>
 					<Title>
