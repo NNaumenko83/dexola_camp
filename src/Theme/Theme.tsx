@@ -63,6 +63,8 @@ const theme = {
 		scrollDownBorderolor: "#FFFFFF",
 		// Starruner text color
 		starrunerTextColor: "#FFFFFF",
+		// Starruner rectangle background
+		starrunerBackgroundRectangle: "#121456",
 	},
 
 	fontSizes: {

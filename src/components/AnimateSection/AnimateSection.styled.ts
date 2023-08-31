@@ -55,7 +55,7 @@ export const BlueRectangle = styled.div`
 	width: 1289px;
 	height: 916px;
 
-	background-color: #121456;
+	background-color: ${props => props.theme.colors.starrunerBackgroundRectangle};
 	margin: 0 auto;
 
 	filter: blur(100px);
