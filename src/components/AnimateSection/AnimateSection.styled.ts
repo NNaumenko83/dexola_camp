@@ -41,7 +41,7 @@ export const AnimateSectionStyled = styled.section`
 
 export const AnimateContainer = styled.div`
 	position: relative;
-	background: #000;
+
 	/* overflow: hidden; */
 	height: 100%;
 	margin: 0 auto;
