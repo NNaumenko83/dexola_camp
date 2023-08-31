@@ -156,24 +156,23 @@ export const EllipseStarrunner = styled.div`
 `;
 
 export const StarrunnerText = styled.p`
-	color: #ffffff;
+	color: ${props => props.theme.colors.starrunerTextColor};
 	text-align: center;
 
 	font-family: "Swis721 Md BT", sans-serif;
-	font-size: 64px;
-	font-style: normal;
+	font-size: 4rem;
 
-	line-height: 1.25; /* 80.256px */
+	line-height: 1.25;
 	text-transform: uppercase;
 `;
 
 export const PretextStarrunnerText = styled.p`
-	color: #ffffff;
+	color: ${props => props.theme.colors.starrunerTextColor};
 	text-align: center;
 
 	font-family: Swis721 BT, sans-serif;
-	font-size: 24px;
-	font-style: normal;
+	font-size: 1.5rem;
+
 	font-weight: 400;
 	line-height: 1.4;
 	text-transform: uppercase;

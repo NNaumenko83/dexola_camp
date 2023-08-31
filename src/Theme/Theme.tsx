@@ -61,6 +61,8 @@ const theme = {
 		eyeHoverColor: "#204FFE",
 		// Scroll bottom border color
 		scrollDownBorderolor: "#FFFFFF",
+		// Starruner text color
+		starrunerTextColor: "#FFFFFF",
 	},
 
 	fontSizes: {
