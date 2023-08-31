@@ -1,5 +1,12 @@
 @import-normalize; /* bring in normalize.css styles */
 
+@font-face {
+	font-family: "Swis721 Md BT";
+	src: url("../src//fonts/swis721_md_bt/Swiss721MediumBT.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*Обнулення*/
 * {
 	padding: 0;

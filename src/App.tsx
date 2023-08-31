@@ -1,4 +1,5 @@
 import Theme from "./Theme/Theme";
+import { AnimateSection } from "./components/AnimateSection/AnimateSection";
 
 import { Features } from "./components/Features/Features";
 import { Footer } from "./components/Footer/Footer";
@@ -14,6 +15,7 @@ function App() {
 			<Header />
 			<Main>
 				<Hero />
+				<AnimateSection />
 				<Features />
 				<TopNfts />
 				<JoinUs />

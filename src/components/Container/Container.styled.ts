@@ -1,8 +1,6 @@
 import { styled } from "styled-components";
 
 export const ContainerStyled = styled.div<{ $footerborder?: string }>`
-	/* outline: 1px solid red; */
-
 	max-width: 46.4375rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
