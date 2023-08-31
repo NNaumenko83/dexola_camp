@@ -1,3 +1,4 @@
+import { ScrollDown } from "../ScrollDown/ScrollDown";
 import {
 	CircleWrapper,
 	AnimateContainer,
@@ -12,7 +13,6 @@ import {
 	StarrunnerText,
 	AnimateSectionStyled,
 	PretextStarrunnerText,
-	// ScrollDown,
 } from "./AnimateSection.styled";
 
 export const AnimateSection = () => {
@@ -33,12 +33,10 @@ export const AnimateSection = () => {
 					</EllipseFive>
 				</CircleWrapper>
 				<EllipseStarrunner>
-					<div>
-						<PretextStarrunnerText>Explore Cyberpunk Space Adventures in</PretextStarrunnerText>
-						<StarrunnerText>StarRunner ecosystem</StarrunnerText>
-					</div>
+					<PretextStarrunnerText>Explore Cyberpunk Space Adventures in</PretextStarrunnerText>
+					<StarrunnerText>StarRunner ecosystem</StarrunnerText>
 				</EllipseStarrunner>
-				{/* <ScrollDown></ScrollDown> */}
+				<ScrollDown />
 				<BlueRectangle></BlueRectangle>
 			</AnimateContainer>
 		</AnimateSectionStyled>

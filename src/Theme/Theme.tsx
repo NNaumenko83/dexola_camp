@@ -59,6 +59,8 @@ const theme = {
 		eyeDefaultColor: "#FFFFFF",
 		// Eye hover color
 		eyeHoverColor: "#204FFE",
+		// Scroll bottom border color
+		scrollDownBorderolor: "#FFFFFF",
 	},
 
 	fontSizes: {

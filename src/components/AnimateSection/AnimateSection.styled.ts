@@ -68,30 +68,13 @@ export const CircleWrapper = styled.div`
 	left: 0;
 	top: 0;
 	z-index: 99;
-	border: 1px solid green;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	width: 100%;
 	height: 100%;
-`;
-
-export const EllipseStarrunner = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 40;
-	width: 994px;
-	height: 717px;
-	border-radius: 50%;
-	border: 2px solid #204ffe;
-	opacity: 0;
-	animation: ${delayAppear} 5s 2s linear forwards;
 `;
 
 export const EllipseOne = styled.div`
@@ -153,18 +136,24 @@ export const InnerEllipse = styled.div`
 	border: 1px solid #204ffe;
 `;
 
-// export const ScrollDown = styled.div`
-//   position: absolute;
-//   opacity: 0;
-//   right: 200px;
-//   bottom: 100px;
-//   width: 100px;
-//   height: 100px;
-//   background-color: pink;
-//   border: 1px solid red;
-//   border-width: 1px;
-//   animation: ${delayAppear} 2s 8s linear forwards;
-// `;
+export const EllipseStarrunner = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 40;
+	width: 994px;
+	height: 717px;
+	border-radius: 50%;
+	border: 2px solid #204ffe;
+	opacity: 0;
+	animation: ${delayAppear} 5s 2s linear forwards;
+`;
 
 export const StarrunnerText = styled.p`
 	color: #ffffff;
