@@ -26,7 +26,13 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ images, number, name,
 	return (
 		<FeatureCardStyled>
 			<ImageWrapper>
-				<Image srcSet={(images[0], images[1])} src={images[0]} alt="Astronaut" width="150px" height="311px" />
+				<Image
+					srcSet={`${images[0]} 1x, ${images[1]} 2x`}
+					src={images[0]}
+					alt="Astronaut"
+					width="150px"
+					height="311px"
+				/>
 			</ImageWrapper>
 
 			<ThumbContainer>
