@@ -5,7 +5,7 @@ export const SubTitleStyled = styled.h3`
 	font-size: ${props => props.theme.fontSizes.subTitle.mobile};
 	color: ${props => props.theme.colors.subtitle};
 
-	line-height: 1;
+	line-height: 1.4;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		font-size: ${props => props.theme.fontSizes.subTitle.tablet};

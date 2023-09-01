@@ -51,8 +51,8 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 						srcSet={`${featuresImagesArrayDesktop[index][0]} 1x, ${featuresImagesArrayDesktop[index][1]} 2x`}
 						src={`${featuresImagesArrayTablet[index][0]}`}
 						alt="Astronaut"
-						width="448"
-						height="236"
+						width="373"
+						height="307"
 					/>
 				</picture>
 			</ImageWrapper>

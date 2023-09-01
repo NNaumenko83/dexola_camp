@@ -5,6 +5,7 @@ export const FeatureCardStyled = styled.li`
 	border: 1px solid ${props => props.theme.colors.borderCard};
 	display: flex;
 	flex-direction: column;
+	height: auto;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		flex-basis: calc(100% / 3);
@@ -19,12 +20,7 @@ export const FeatureCardStyled = styled.li`
 export const ImageWrapper = styled.div`
 	width: 100%;
 
-	height: 14.5rem;
 	border-bottom: 1px solid ${props => props.theme.colors.borderCard};
-
-	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-		height: 15rem;
-	}
 `;
 
 export const ThumbContainer = styled.div`
@@ -90,7 +86,8 @@ export const StyledButton = styled(Button)`
 
 export const Image = styled.img`
 	display: block;
-	height: 100%;
+	height: auto;
+
 	width: 100%;
 	object-fit: cover;
 	object-position: center;

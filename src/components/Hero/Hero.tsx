@@ -17,8 +17,8 @@ export const Hero = () => {
 										srcSet={`${imageSrcSet[0]} 1x, ${imageSrcSet[1]} 2x`}
 										src={imageSrcSet[0]}
 										alt="Hero image"
-										width="150px"
-										height="311px"
+										width="150"
+										height="311"
 									/>
 								</ImageWrapper>
 							))}
