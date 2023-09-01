@@ -9,8 +9,6 @@ export const HeroContainer = styled.section`
 		"text";
 	grid-template-columns: 100%;
 
-	/* overflow: hidden; */
-
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		grid-template-columns: 45.8125rem 29.1875rem;
 		grid-template-areas:
@@ -82,9 +80,9 @@ const fadeImageAnimation = keyframes`
         `;
 
 export const ImagesContainer = styled.li`
-	position: absolute;
 	width: 100%;
-	height: 100%;
+	min-height: 19.4375rem;
+
 	display: flex;
 	opacity: 0;
 	animation-name: ${fadeImageAnimation};
@@ -102,7 +100,8 @@ export const ImagesList = styled.ul`
 	grid-area: images;
 
 	width: 100%;
-	height: 19.4375rem;
+
+	height: auto;
 	position: relative;
 	margin: 0 auto;
 
@@ -137,26 +136,34 @@ export const ImagesList = styled.ul`
 		}
 	}
 
-	& :nth-child(1) {
-		z-index: 1;
-	}
-
-	& :nth-child(2) {
+	& > :nth-child(2) {
+		position: absolute;
+		top: 0;
+		left: 0;
 		z-index: 2;
 		animation-delay: 8s;
 	}
 
-	& :nth-child(3) {
+	& > :nth-child(3) {
+		position: absolute;
+		top: 0;
+		left: 0;
 		z-index: 3;
 		animation-delay: 16s;
 	}
 
-	& :nth-child(4) {
+	& > :nth-child(4) {
+		position: absolute;
+		top: 0;
+		left: 0;
 		z-index: 4;
 		animation-delay: 24s;
 	}
 
-	& :nth-child(5) {
+	& > :nth-child(5) {
+		position: absolute;
+		top: 0;
+		left: 0;
 		z-index: 5;
 		animation-delay: 32s;
 	}
@@ -185,7 +192,6 @@ export const TextWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-	display: block;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;

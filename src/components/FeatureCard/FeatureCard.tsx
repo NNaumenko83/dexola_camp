@@ -3,7 +3,7 @@ import {
 	featuresImagesArrayMobile,
 	featuresImagesArrayTablet,
 	featuresImagesArrayDesktop,
-} from "../../constans/featuresImagesNew";
+} from "../../constans/featuresImages";
 
 import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";

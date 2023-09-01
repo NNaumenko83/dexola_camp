@@ -40,7 +40,7 @@ export const SubtitleAndTextWrapper = styled.div`
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		padding: 5.625rem 11.5625rem 4rem 11.6875rem;
-		gap: 0.6875rem;
+		gap: 1.5rem;
 	}
 `;
 
