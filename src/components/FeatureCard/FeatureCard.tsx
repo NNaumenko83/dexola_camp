@@ -1,4 +1,9 @@
 import Icon from "../Icon/Icon";
+import {
+	featuresImagesArrayMobile,
+	featuresImagesArrayTablet,
+	featuresImagesArrayDesktop,
+} from "../../constans/featuresImagesNew";
 
 import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";
@@ -13,26 +18,43 @@ import {
 } from "./FeatureCard.styled";
 
 type IFeatureCardProps = {
-	images: string[];
+	index: number;
 	number: string;
 	name: string;
 	text: string;
 };
 
-export const FeatureCard: React.FC<IFeatureCardProps> = ({ images, number, name, text }) => {
+export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, text }) => {
 	const onClick = () => {
 		console.log("Click");
 	};
 	return (
 		<FeatureCardStyled>
 			<ImageWrapper>
-				<Image
-					srcSet={`${images[0]} 1x, ${images[1]} 2x`}
-					src={images[0]}
-					alt="Astronaut"
-					width="150px"
-					height="311px"
-				/>
+				<picture>
+					<source
+						srcSet={`${featuresImagesArrayMobile[index][0]} 1x, ${featuresImagesArrayMobile[index][1]} 2x`}
+						media="(max-width: 743px)"
+					/>
+
+					<source
+						srcSet={`${featuresImagesArrayDesktop[index][0]} 1x, ${featuresImagesArrayDesktop[index][1]} 2x`}
+						media="(min-width: 1440px)"
+					/>
+
+					<source
+						srcSet={`${featuresImagesArrayTablet[index][0]} 1x, ${featuresImagesArrayTablet[index][1]} 2x`}
+						media="(min-width: 744px)"
+					/>
+
+					<Image
+						srcSet={`${featuresImagesArrayDesktop[index][0]} 1x, ${featuresImagesArrayDesktop[index][1]} 2x`}
+						src={`${featuresImagesArrayTablet[index][0]}`}
+						alt="Astronaut"
+						width="448"
+						height="236"
+					/>
+				</picture>
 			</ImageWrapper>
 
 			<ThumbContainer>

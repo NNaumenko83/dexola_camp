@@ -19,19 +19,19 @@ import featuresImageSecondMinDesktop2x from "../assets/features-images/FeaturesI
 import featuresImageThirdMinDesktop from "../assets/features-images/FeaturesImages/Desktop//Features-image-third_Desktop-min.jpg";
 import featuresImageThirdMinDesktop2x from "../assets/features-images/FeaturesImages/Desktop/Features-image-third_Desktop@2x-min.jpg";
 
-export const FeaturesImagesArrayMobile = [
+export const featuresImagesArrayMobile = [
 	[featuresImageFirstMinMobile, featuresImageFirstMinMobile2x],
 	[featuresImageSecondMinMobile, featuresImageSecondMinMobile2x],
 	[featuresImageThirdMinMobile, featuresImageThirdMinMobile2x],
 ];
 
-export const FeaturesImagesArrayTablet = [
+export const featuresImagesArrayTablet = [
 	[featuresImageFirstMinTablet, featuresImageFirstMinTablet2x],
 	[featuresImageSecondMinTablet, featuresImageSecondMinTablet2x],
 	[featuresImageThirdMinTablet, featuresImageThirdMinTablet2x],
 ];
 
-export const FeaturesImagesArrayDesktop = [
+export const featuresImagesArrayDesktop = [
 	[featuresImageFirstMinDesktop, featuresImageFirstMinDesktop2x],
 	[featuresImageSecondMinDesktop, featuresImageSecondMinDesktop2x],
 	[featuresImageThirdMinDesktop, featuresImageThirdMinDesktop2x],
