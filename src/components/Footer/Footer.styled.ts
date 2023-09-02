@@ -85,6 +85,7 @@ export const CopyrightText = styled.p`
 
 export const FooterStyled = styled.footer`
 	margin-top: 4.3125rem;
+	background-color: ${props => props.theme.colors.background};
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		margin-top: 4.75rem;
 	}

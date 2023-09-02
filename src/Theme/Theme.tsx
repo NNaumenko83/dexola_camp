@@ -49,7 +49,9 @@ const theme = {
 		inputStarColor: "#EB3795",
 		// Input text color
 		inputTextColor: "#FFFFFF",
-		// Input text color
+		// Hero text color
+		heroTextColor: "#FFFFFF",
+		// Input placeholder color
 		inputPlaceholder: "#B3B3B3",
 		// Form border color
 		formBorderColor: "#204FFE",

@@ -31,6 +31,7 @@ const titleAnimation = keyframes`
 
 export const TitleHero = styled.h1`
 	grid-area: title;
+	margin-top: 16px;
 
 	color: ${props => props.theme.colors.heroTitle};
 	width: 49.6875rem;
@@ -177,6 +178,7 @@ export const TextWrapper = styled.div`
 	grid-area: text;
 	display: flex;
 	align-items: flex-end;
+	color: ${props => props.theme.colors.heroTextColor};
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		width: 43rem;
