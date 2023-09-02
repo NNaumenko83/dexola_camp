@@ -2,8 +2,17 @@ import { styled } from "styled-components";
 
 export const TableStyled = styled.table`
 	min-width: 100%;
+	margin-top: 2rem;
 	border-collapse: collapse;
 	border: none;
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		margin-top: 3.5rem;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		margin-top: 5.625rem;
+	}
 `;
 
 export const TableHead = styled.thead`
