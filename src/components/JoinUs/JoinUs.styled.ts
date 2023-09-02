@@ -4,7 +4,7 @@ import { ContainerStyled } from "../Container/Container.styled";
 export const SubTitleAndTextWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 0.3125rem 1.5rem 0;
+	padding: 2rem 0.3125rem 2rem 0;
 	gap: 0.75rem;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {

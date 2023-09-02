@@ -8,13 +8,13 @@
 	{
 		"number": "02",
 		"name": "Staking",
-		"text": "Join a thriving community of stakers, united by their passion for exploration, strategy, and gaming.",
+		"text": "Join a thriving community\nof stakers, united by their passion\nfor exploration, strategy, and\ngaming.",
 		"images": ["featuresImageSecondMin", "featuresImageSecondMin2x"]
 	},
 	{
 		"number": "03",
 		"name": "NFT minting",
-		"text": "Every StarRunner NFT tells a story – YOUR story. This NFT encapsulates the essence of your journey like never before.",
+		"text": "Every StarRunner NFT tells\na story – YOUR story. This NFT\nencapsulates the essence of your\njourney like never before.",
 		"images": ["featuresImageThirdMin", "featuresImageThirdMin2x"]
 	}
 ]

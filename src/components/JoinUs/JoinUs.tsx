@@ -22,7 +22,7 @@ export const JoinUs = () => {
 
 			<JoinUsContainer>
 				<SubTitleAndTextWrapper>
-					<SubTitle>About StarRunner</SubTitle>
+					<SubTitle>Experience the Power of StarRunner</SubTitle>
 
 					<Text>
 						Join Our Community and Embark on a Journey of Opportunities. Discover the full range of our services that

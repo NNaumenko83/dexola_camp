@@ -1,4 +1,5 @@
 import Icon from "../Icon/Icon";
+import React from "react";
 import {
 	featuresImagesArrayMobile,
 	featuresImagesArrayTablet,
@@ -28,6 +29,24 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 	const onClick = () => {
 		console.log("Click");
 	};
+
+	const shouldInsertBreak = window.innerWidth < 744;
+
+	const renderText = (text: string) => {
+		if (text.includes("\n") && shouldInsertBreak) {
+			const lines = text.split("\n");
+			return lines.map((line: string, index: number) => (
+				<React.Fragment key={index}>
+					{line}
+					<br />
+				</React.Fragment>
+			));
+		} else {
+			// Якщо \n відсутній або не виконана умова, просто відобразіть текст
+			return <p>{text}</p>;
+		}
+	};
+
 	return (
 		<FeatureCardStyled>
 			<ImageWrapper>
@@ -63,7 +82,7 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 					<SubTitle>{name}</SubTitle>
 				</SubTitleWrapper>
 				<TextWrapper>
-					<Text>{text}</Text>
+					<Text>{renderText(text)}</Text>
 				</TextWrapper>
 
 				<StyledButton type="button" onClick={onClick}>
