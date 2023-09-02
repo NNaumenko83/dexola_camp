@@ -16,7 +16,6 @@ export const HeroContainer = styled.section`
 			"title title";
 	}
 `;
-
 const titleAnimation = keyframes`
       0% {
        transform: translateX(100%);
@@ -31,7 +30,6 @@ const titleAnimation = keyframes`
 
 export const TitleHero = styled.h1`
 	grid-area: title;
-	margin-top: 16px;
 
 	color: ${props => props.theme.colors.heroTitle};
 	width: 49.6875rem;
@@ -47,6 +45,10 @@ export const TitleHero = styled.h1`
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: normal;
+
+	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		margin-top: 1rem;
+	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		font-size: ${props => props.theme.fontSizes.heroTitle.tablet};
@@ -94,6 +96,10 @@ export const ImagesContainer = styled.li`
 
 	& > :first-child {
 		border-right: 1px solid ${props => props.theme.colors.heroImagesBorder};
+	}
+
+	@media screen and (min-width: 744px) and (max-width: 745px) {
+		height: 311px;
 	}
 `;
 
