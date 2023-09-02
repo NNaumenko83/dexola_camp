@@ -76,6 +76,7 @@ export const CopyrightText = styled.p`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		justify-self: start;
+		margin-top: 0.125rem;
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		align-self: center;

@@ -9,7 +9,7 @@ export const SubTitleAndTextWrapper = styled.div`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		/* flex-direction: row; */
-		padding: 3.5rem 8.75rem 3.5rem 0;
+		padding: 3.5rem 8.4375rem 3.5rem 0;
 		gap: 0.75rem;
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
