@@ -45,10 +45,13 @@ export const SubtitleAndTextWrapper = styled.div`
 `;
 
 export const LineBreak = styled.br`
-	visibility: hidden;
-	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-		visibility: visible;
+	@media screen and (max-width: 743px) {
+		display: none;
 	}
+
+	/* @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+		visibility: visible;
+	} */
 `;
 
 export const FeaturesSection = styled.section`
