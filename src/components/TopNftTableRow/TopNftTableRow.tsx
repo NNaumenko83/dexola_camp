@@ -32,22 +32,22 @@ export const TopNftTableRow: React.FC<TableRowProps> = ({ item, indexItem }) => 
 			</TableDataAvatar>
 			<TableDataName>
 				<NumberItem>{item.numberItem}&nbsp;</NumberItem>
-				<span>{item.nftName}</span>
+				<h3>{item.nftName}</h3>
 			</TableDataName>
 			<TableDataRarity>
 				<LabelText>Rarity:</LabelText>
-				<span>{item.rarityLevel}</span>
+				<p>{item.rarityLevel}</p>
 			</TableDataRarity>
 			<TableDataInfo>
 				<LabelText>Total games:</LabelText>
-				<span>{item.totalGames}</span>
+				<p>{item.totalGames}</p>
 			</TableDataInfo>
 			<TableDataInfo>
 				<LabelText>Games Won:</LabelText>
-				<span>{item.gamesWon}</span>
+				<p>{item.gamesWon}</p>
 			</TableDataInfo>
 			<TableDataPrice>
-				<span>{item.PriceETH}</span>
+				<p>{item.PriceETH}</p>
 				<EthText>&nbsp;ETH</EthText>
 			</TableDataPrice>
 		</TableRow>

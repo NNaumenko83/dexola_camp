@@ -44,7 +44,7 @@ export const TableRow = styled.tr`
 		letter-spacing: -0.02rem;
 	}
 
-	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		font-size: ${props => props.theme.fontSizes.body.web};
 		line-height: 1.33;
 		letter-spacing: -0.0225rem;
@@ -63,8 +63,9 @@ export const TableData = styled.td`
 
 export const TableDataName = styled(TableData)`
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		display: flex;
 		color: ${props => props.theme.colors.subtitle};
-		font-family: Kanit;
+		font-family: Kanit, sans-serif;
 		font-size: ${props => props.theme.fontSizes.subTitle.mobile};
 		font-weight: ${props => props.theme.fontWeights.medium};
 		line-height: 1.4;

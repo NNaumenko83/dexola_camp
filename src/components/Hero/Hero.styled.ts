@@ -188,6 +188,7 @@ export const TextWrapper = styled.div`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		width: 43rem;
+		padding-right: 0.3125rem;
 	}
 
 	@media screen and (min-width: 46.875rem) {
