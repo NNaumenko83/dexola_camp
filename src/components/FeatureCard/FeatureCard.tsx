@@ -6,16 +6,15 @@ import {
 	featuresImagesArrayDesktop,
 } from "../../constans/featuresImages";
 
-import { SubTitle } from "../SubTitle/SubTitle";
 import { Text } from "../Text/Text";
 import {
 	FeatureCardStyled,
 	ImageWrapper,
 	StyledButton,
-	SubTitleWrapper,
 	ThumbContainer,
 	Image,
 	TextWrapper,
+	SubTitle,
 } from "./FeatureCard.styled";
 
 type IFeatureCardProps = {
@@ -42,7 +41,6 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 				</React.Fragment>
 			));
 		} else {
-			// Якщо \n відсутній або не виконана умова, просто відобразіть текст
 			return <p>{text}</p>;
 		}
 	};
@@ -77,10 +75,11 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 			</ImageWrapper>
 
 			<ThumbContainer>
-				<SubTitleWrapper>
-					<SubTitle>{number}</SubTitle>
-					<SubTitle>{name}</SubTitle>
-				</SubTitleWrapper>
+				<SubTitle>
+					<span>{number}</span>
+					<span>{name}</span>
+				</SubTitle>
+
 				<TextWrapper>
 					<Text>{renderText(text)}</Text>
 				</TextWrapper>

@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Button } from "../Button/Button";
+import { SubTitleStyled } from "../SubTitle/SubTitle.styled";
 
 export const FeatureCardStyled = styled.li`
 	border: 1px solid ${props => props.theme.colors.borderCard};
@@ -49,13 +50,18 @@ export const ThumbContainer = styled.div`
 	}
 `;
 
-export const SubTitleWrapper = styled.div`
+export const SubTitle = styled(SubTitleStyled)`
 	display: flex;
 	gap: 1rem;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		flex-direction: column;
 		gap: 0.25rem;
+	}
+
+	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
+		flex-direction: row;
+		gap: 1rem;
 	}
 `;
 
