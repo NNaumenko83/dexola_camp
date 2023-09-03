@@ -14,7 +14,7 @@ Before you begin, please ensure that you have the following components installed
 
 ## Getting Started
 
-To get started with Dexola Camp, follow these steps:
+ To get started with Dexola Camp, follow these steps:
 
 1. Clone this repository to your local machine:
 
