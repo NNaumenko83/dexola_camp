@@ -6,7 +6,7 @@ const growAnimation = keyframes`
   }
   100% {
     transform: scale(100);
-    display:none;
+    opacity:0;
   }
 `;
 const delayAppear = keyframes`   0% {     opacity: 0;   }   100% {     opacity: 1;   } `;
