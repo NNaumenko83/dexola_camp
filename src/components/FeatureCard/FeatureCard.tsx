@@ -41,7 +41,7 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 				</React.Fragment>
 			));
 		} else {
-			return <p>{text}</p>;
+			return text;
 		}
 	};
 

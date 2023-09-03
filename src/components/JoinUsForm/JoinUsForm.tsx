@@ -76,7 +76,7 @@ const ErrorMessageStyled = styled(ErrorMessage)`
 const validationSchema = Yup.object().shape({
 	email: Yup.string().email("Is not valid email").required("Please complete this field"),
 	phone: Yup.string()
-		.matches(/^\+(?:[0-9] ?){6,14}[0-9]$/, "Is not valid phone number")
+		.matches(/^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/, "Is not valid phone number")
 		.required("Please complete this field"),
 	password: Yup.string().required("Please complete this field").min(8, "Password must be at least 8 characters long"),
 	confirmPassword: Yup.string()
