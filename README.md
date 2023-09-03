@@ -24,15 +24,15 @@ To get started with Dexola Camp, follow these steps:
 
 2. Navigate to the project directory:
 
-```bash
-  cd dexola_camp
-```
+   ```bash
+   cd dexola_camp
+   ```
 
 3. Install project dependencies:
 
-```bash
- npm install
-```
+   ```bash
+   npm install
+   ```
 
 ## Usage
 
