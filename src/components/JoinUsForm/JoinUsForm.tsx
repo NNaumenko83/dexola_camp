@@ -105,7 +105,7 @@ export const JoinUsForm = () => {
 	const handleSubmit = async (values: typeof initialValues, { resetForm }: { resetForm: () => void }) => {
 		setIsLoading(true);
 
-		const res = await simulateRequest();
+		const res = await simulateRequest(values);
 
 		setIsLoading(false);
 
