@@ -1,6 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { styled } from "styled-components";
 import * as Yup from "yup";
+import { useState } from "react";
+
 import {
 	InputWrapper,
 	LeftAddonPhone,
@@ -11,9 +13,11 @@ import {
 import { InputGroup } from "../InputGroup/InputGroup";
 import { InputLeftAddon } from "../InputLeftAddon/InputLeftAddon";
 import { InputRightAddon } from "../InputRightAddon/InputRightAddon";
-import { useState } from "react";
 import { EyeButton } from "../EyeButton/EyeButton";
 import Icon from "../Icon/Icon";
+
+import { toast } from "react-toastify";
+import { simulateRequest } from "../../utils/fakeSubmit";
 
 const FormStyled = styled(Form)`
 	border: 1px solid ${props => props.theme.colors.formBorderColor};
@@ -96,9 +100,17 @@ export const JoinUsForm = () => {
 	const [showConfirmPassword, setConfirmPassword] = useState(false);
 	const onShowPasswordButtonClick: () => void = () => setShowPassword(!showPassword);
 	const onShowConfirmPasswordButtonClick: () => void = () => setConfirmPassword(!showConfirmPassword);
+	const [isLoading, setIsLoading] = useState(false);
 
-	const handleSubmit = (values: typeof initialValues, { resetForm }: { resetForm: () => void }) => {
-		console.log("values:", values);
+	const handleSubmit = async (values: typeof initialValues, { resetForm }: { resetForm: () => void }) => {
+		setIsLoading(true);
+
+		const res = await simulateRequest();
+
+		setIsLoading(false);
+
+		toast.success(res.message);
+
 		resetForm();
 	};
 
@@ -174,8 +186,8 @@ export const JoinUsForm = () => {
 						<ErrorMessageStyled name="confirmPassword" component="div" />
 					</InputWrapper>
 
-					<Button type="submit" disabled={!isValid}>
-						<ButtonTextWrapper>Send it</ButtonTextWrapper>
+					<Button type="submit" disabled={!isValid || isLoading}>
+						<ButtonTextWrapper>{isLoading ? "Loading" : "Send it"}</ButtonTextWrapper>
 					</Button>
 				</FormStyled>
 			)}
