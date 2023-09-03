@@ -23,9 +23,9 @@ const slideUp = keyframes`
 export const AnimateSectionStyled = styled.section`
 	@media screen and (max-width: ${props => props.theme.breakpoints.maxTablet}) {
 		position: absolute;
-		width: 1px;
-		height: 1px;
-		margin: -1px;
+		width: 0.0625rem;
+		height: 0.0625rem;
+		margin: -0.0625rem;
 		border: 0;
 		padding: 0;
 
@@ -35,7 +35,7 @@ export const AnimateSectionStyled = styled.section`
 	}
 
 	width: 100%;
-	height: 880px;
+	height: 55rem;
 	overflow: hidden;
 `;
 
@@ -51,13 +51,13 @@ export const AnimateContainer = styled.div`
 `;
 
 export const BlueRectangle = styled.div`
-	width: 1289px;
-	height: 916px;
+	width: 80.5625rem;
+	height: 57.25rem;
 
 	background-color: ${props => props.theme.colors.starrunerBackgroundRectangle};
 	margin: 0 auto;
 
-	filter: blur(100px);
+	filter: blur(6.25rem);
 
 	animation: ${slideUp} 5s forwards;
 `;
@@ -77,62 +77,62 @@ export const CircleWrapper = styled.div`
 `;
 
 export const EllipseOne = styled.div`
-	width: 100px;
-	height: 50px;
+	width: 6.25rem;
+	height: 3.125rem;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	border: 1px solid #204ffe;
+	border: 0.0625rem solid #204ffe;
 `;
 
 export const EllipseTwo = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 150px;
-	height: 75px;
+	width: 9.375rem;
+	height: 4.6875rem;
 	border-radius: 50%;
-	border: 1px solid #204ffe;
+	border: 0.0625rem solid #204ffe;
 `;
 
 export const EllipseThree = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 200px;
-	height: 100px;
+	width: 12.5rem;
+	height: 6.25rem;
 	border-radius: 50%;
-	border: 1px solid #204ffe;
+	border: 0.0625rem solid #204ffe;
 `;
 
 export const EllipseFour = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 250px;
-	height: 150px;
+	width: 15.625rem;
+	height: 9.375rem;
 	border-radius: 50%;
-	border: 1px solid #204ffe;
+	border: 0.0625rem solid #204ffe;
 `;
 
 export const EllipseFive = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 300px;
-	height: 200px;
+	width: 18.75rem;
+	height: 12.5rem;
 	border-radius: 50%;
-	border: 1px solid 204FFE;
+	border: 0.0625rem solid #204ffe;
 	animation: ${growAnimation} 7s linear forwards;
 `;
 
 export const InnerEllipse = styled.div`
-	width: 35px;
-	height: 40px;
+	width: 2.1875rem;
+	height: 2.5rem;
 	border-radius: 50%;
-	border: 1px solid #204ffe;
+	border: 0.0625rem solid #204ffe;
 `;
 
 export const EllipseStarrunner = styled.div`
@@ -146,10 +146,10 @@ export const EllipseStarrunner = styled.div`
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 40;
-	width: 994px;
-	height: 717px;
+	width: 62.125rem;
+	height: 44.8125rem;
 	border-radius: 50%;
-	border: 2px solid #204ffe;
+	border: 0.125rem solid #204ffe;
 	opacity: 0;
 	animation: ${delayAppear} 5s 2s linear forwards;
 `;
