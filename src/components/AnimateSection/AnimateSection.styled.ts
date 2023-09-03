@@ -5,8 +5,8 @@ const growAnimation = keyframes`
     transform: scale(0);
   }
   100% {
-    transform: scale(100);
-    opacity:0;
+    transform: scale(150);
+
   }
 `;
 const delayAppear = keyframes`   0% {     opacity: 0;   }   100% {     opacity: 1;   } `;
@@ -66,7 +66,6 @@ export const CircleWrapper = styled.div`
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 99;
 
 	display: flex;
 	justify-content: center;
