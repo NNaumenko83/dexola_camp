@@ -13,10 +13,10 @@ const delayAppear = keyframes`   0% {     opacity: 0;   }   100% {     opacity: 
 
 const slideUp = keyframes`
   0% {
-    transform: translateY(100%);
+    transform: translate3d(0, 100%, 0); 
   }
   100% {
-    transform: translateY(40%);
+    transform: translate3d(0, 40%, 0); 
   }
 `;
 
@@ -42,7 +42,6 @@ export const AnimateSectionStyled = styled.section`
 export const AnimateContainer = styled.div`
 	position: relative;
 
-	/* overflow: hidden; */
 	height: 100%;
 	margin: 0 auto;
 
