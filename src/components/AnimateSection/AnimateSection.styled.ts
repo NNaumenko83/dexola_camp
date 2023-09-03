@@ -125,11 +125,11 @@ export const EllipseFive = styled.div`
 	height: 200px;
 	border-radius: 50%;
 	border: 1px solid 204FFE;
-	animation: ${growAnimation} 5s linear forwards;
+	animation: ${growAnimation} 7s linear forwards;
 `;
 
 export const InnerEllipse = styled.div`
-	width: 25px;
+	width: 35px;
 	height: 40px;
 	border-radius: 50%;
 	border: 1px solid #204ffe;
