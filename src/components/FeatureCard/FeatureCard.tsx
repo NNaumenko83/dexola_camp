@@ -29,7 +29,7 @@ export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, 
 		console.log("Click");
 	};
 
-	const shouldInsertBreak = window.innerWidth < 744;
+	const shouldInsertBreak = window.innerWidth < 376;
 
 	const renderText = (text: string) => {
 		if (text.includes("\n") && shouldInsertBreak) {

@@ -10,7 +10,7 @@ interface ButtonProps {
 	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const Button = ({ type = "button", children, onClick, ...otherProps }: ButtonProps) => {
+export const Button = ({ type = "button", disabled = false, children, onClick, ...otherProps }: ButtonProps) => {
 	const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
 		if (onClick) {
 			onClick(event);
@@ -18,7 +18,7 @@ export const Button = ({ type = "button", children, onClick, ...otherProps }: Bu
 	};
 
 	return (
-		<StyledButton type={type} onClick={handleClick} {...otherProps}>
+		<StyledButton type={type} onClick={handleClick} disabled={disabled} {...otherProps}>
 			{children}
 		</StyledButton>
 	);

@@ -97,8 +97,9 @@ export const JoinUsForm = () => {
 	const onShowPasswordButtonClick: () => void = () => setShowPassword(!showPassword);
 	const onShowConfirmPasswordButtonClick: () => void = () => setConfirmPassword(!showConfirmPassword);
 
-	const handleSubmit = (values: typeof initialValues) => {
+	const handleSubmit = (values: typeof initialValues, { resetForm }: { resetForm: () => void }) => {
 		console.log("values:", values);
+		resetForm();
 	};
 
 	return (
@@ -143,6 +144,7 @@ export const JoinUsForm = () => {
 								name="password"
 								onBlur={handleBlur}
 								placeholder="Password"
+								autoComplete="new-password"
 							/>
 							<InputRightAddon>
 								<EyeButton onClick={onShowPasswordButtonClick} showPassword={showPassword} />
@@ -162,6 +164,7 @@ export const JoinUsForm = () => {
 								name="confirmPassword"
 								onBlur={handleBlur}
 								placeholder="Confirm Password"
+								autoComplete="new-password"
 							/>
 							<InputRightAddon>
 								<EyeButton onClick={onShowConfirmPasswordButtonClick} showPassword={showConfirmPassword} />

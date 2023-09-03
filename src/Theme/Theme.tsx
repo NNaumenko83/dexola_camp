@@ -13,7 +13,7 @@ const theme = {
 		//ButtonColors
 		buttonTextColor: "#FFFFFF",
 		buttonBackgroundColor: "#272A2E",
-		buttonHoverBackgroundColor: "#B3B3B3",
+		buttonHoverBackgroundColor: "rgba(39, 42, 46, 0.9)",
 		// SocmediaColors
 		socMediaIcons: "#FFFFFF",
 		socMediaIconsHover: "#204FFE",
