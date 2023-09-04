@@ -41,6 +41,7 @@ export const AnimateSectionStyled = styled.section`
 
 export const AnimateContainer = styled.div`
 	position: relative;
+	overflow: hidden;
 
 	height: 100%;
 	margin: 0 auto;
@@ -75,63 +76,8 @@ export const CircleWrapper = styled.div`
 	height: 100%;
 `;
 
-export const EllipseOne = styled.div`
-	width: 6.25rem;
-	height: 3.125rem;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	border: 0.0625rem solid #204ffe;
-`;
-
-export const EllipseTwo = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 9.375rem;
-	height: 4.6875rem;
-	border-radius: 50%;
-	border: 0.0625rem solid #204ffe;
-`;
-
-export const EllipseThree = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 12.5rem;
-	height: 6.25rem;
-	border-radius: 50%;
-	border: 0.0625rem solid #204ffe;
-`;
-
-export const EllipseFour = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 15.625rem;
-	height: 9.375rem;
-	border-radius: 50%;
-	border: 0.0625rem solid #204ffe;
-`;
-
-export const EllipseFive = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 18.75rem;
-	height: 12.5rem;
-	border-radius: 50%;
-	border: 0.0625rem solid #204ffe;
+export const Elipses = styled.svg`
 	animation: ${growAnimation} 7s linear forwards;
-`;
-
-export const InnerEllipse = styled.div`
-	width: 2.1875rem;
-	height: 2.5rem;
-	border-radius: 50%;
-	border: 0.0625rem solid #204ffe;
 `;
 
 export const EllipseStarrunner = styled.div`
