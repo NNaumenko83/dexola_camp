@@ -1,12 +1,13 @@
 import { styled } from "styled-components";
+import { ContainerStyled } from "../Container/Container.styled";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled(ContainerStyled)`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 `;
 
-export const HeaderStyled = styled.header`
+export const HeaderSection = styled.header`
 	position: fixed;
 	z-index: 999;
 	background-color: ${props => props.theme.colors.background};

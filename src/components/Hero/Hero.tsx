@@ -1,13 +1,13 @@
 import { heroImages } from "../../constans/heroImages";
 
-import { HeroContainer, TitleHero, ImageWrapper, ImagesList, ImagesContainer, TextWrapper, Image } from "./Hero.styled";
+import { HeroSection, TitleHero, ImageWrapper, ImagesList, ImagesContainer, TextWrapper, Image } from "./Hero.styled";
 import { Text } from "../Text/Text";
 import { Container } from "../Container/Container";
 
 export const Hero = () => {
 	return (
 		<Container>
-			<HeroContainer>
+			<HeroSection>
 				<ImagesList>
 					{heroImages.map((images, index) => (
 						<ImagesContainer key={index}>
@@ -33,7 +33,7 @@ export const Hero = () => {
 						beating heart that drives the adrenaline-charged galactic P2E odyssey of 'StarRunner.'
 					</Text>
 				</TextWrapper>
-			</HeroContainer>
+			</HeroSection>
 		</Container>
 	);
 };

@@ -1,6 +1,6 @@
 import { keyframes, styled } from "styled-components";
 
-export const HeroContainer = styled.section`
+export const HeroSection = styled.section`
 	display: grid;
 
 	grid-template-areas:
