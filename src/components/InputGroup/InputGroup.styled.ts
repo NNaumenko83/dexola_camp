@@ -14,4 +14,8 @@ export const InputGroupStyled = styled.div<{ $isInvalid?: boolean }>`
 	&:focus {
 		border-bottom: 1px solid ${props => props.theme.colors.inputBorderHoverColor};
 	}
+
+	&:focus-within {
+		border-bottom: 1px solid blue;
+	}
 `;
