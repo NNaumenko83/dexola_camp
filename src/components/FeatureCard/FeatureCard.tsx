@@ -25,9 +25,7 @@ type IFeatureCardProps = {
 };
 
 export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, text }) => {
-	const onClick = () => {
-		console.log("Click");
-	};
+	const onClick = () => {};
 
 	const shouldInsertBreak = window.innerWidth < 376;
 
