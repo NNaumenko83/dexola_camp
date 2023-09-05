@@ -84,6 +84,4 @@ export const CopyrightText = styled.p`
 	}
 `;
 
-export const FooterStyled = styled.footer`
-	background-color: ${props => props.theme.colors.background};
-`;
+

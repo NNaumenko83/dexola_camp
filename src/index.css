@@ -109,14 +109,11 @@ body {
 	color: #b3b3b3;
 }
 
-/* font-family: 'Swis721 BT', sans-serif; */
-/* font-family: 'Kanit', sans-serif;
-font-family: 'Roboto Mono', monospace; */
-
 #root {
 	min-height: 100%;
 	overflow: clip;
 
 	display: flex;
 	flex-direction: column;
+	background-color: #060412;
 }

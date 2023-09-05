@@ -1,10 +1,10 @@
 import { Container } from "../Container/Container";
 import { SocialMediaLinksList } from "../SocialMediaLinksList/SocialMediaLinksList";
-import { CopyrightText, DesignedByText, FooterContainer, FooterStyled } from "./Footer.styled";
+import { CopyrightText, DesignedByText, FooterContainer } from "./Footer.styled";
 
 export const Footer = () => {
 	return (
-		<FooterStyled>
+		<footer>
 			<Container footerborder={"footerborder"}>
 				<FooterContainer>
 					<SocialMediaLinksList />
@@ -12,6 +12,6 @@ export const Footer = () => {
 					<CopyrightText>&copy; All rights reserved</CopyrightText>
 				</FooterContainer>
 			</Container>
-		</FooterStyled>
+		</footer>
 	);
 };
