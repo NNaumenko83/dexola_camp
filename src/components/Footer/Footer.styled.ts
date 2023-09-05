@@ -66,7 +66,7 @@ export const DesignedByText = styled.p`
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		align-self: center;
-		justify-self: center;
+		justify-self: start;
 	}
 `;
 
@@ -80,7 +80,7 @@ export const CopyrightText = styled.p`
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		align-self: center;
-		justify-self: center;
+		justify-self: end;
 	}
 `;
 
