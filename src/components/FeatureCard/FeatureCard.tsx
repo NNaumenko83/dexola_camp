@@ -1,5 +1,5 @@
 import Icon from "../Icon/Icon";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
 	featuresImagesArrayMobile,
 	featuresImagesArrayTablet,
@@ -25,9 +25,21 @@ type IFeatureCardProps = {
 };
 
 export const FeatureCard: React.FC<IFeatureCardProps> = ({ index, number, name, text }) => {
-	const onClick = () => {};
+	const [shouldInsertBreak, setShouldInsertBreak] = useState(window.innerWidth < 376);
 
-	const shouldInsertBreak = window.innerWidth < 376;
+	useEffect(() => {
+		const handleResize = () => {
+			setShouldInsertBreak(window.innerWidth < 376);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
+	const onClick = () => {};
 
 	const renderText = (text: string) => {
 		if (text.includes("\n") && shouldInsertBreak) {
