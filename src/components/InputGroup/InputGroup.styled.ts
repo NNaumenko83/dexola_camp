@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const InputGroupStyled = styled.div<{ $isInvalid?: boolean; $isFocused: boolean }>`
+export const InputGroupStyled = styled.div<{ $isInvalid?: boolean }>`
 	display: flex;
 	height: 2.5rem;
 	cursor: pointer;
