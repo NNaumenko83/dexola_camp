@@ -8,6 +8,6 @@ export const MainStyled = styled.main`
 		padding-top: 5.4375rem;
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
-		padding-top: 4.875rem;
+		padding-top: 5rem;
 	}
 `;
