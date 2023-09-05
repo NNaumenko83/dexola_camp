@@ -45,6 +45,8 @@ const theme = {
 		inputBorderBottom: "#FFFFFF",
 		// Input Error border bottom
 		inputErrorBorderBottom: "#EB3795",
+		// Input bottom hover color
+		inputBorderHoverColor: "#204FFE",
 		// Input Star Color
 		inputStarColor: "#EB3795",
 		// Input text color

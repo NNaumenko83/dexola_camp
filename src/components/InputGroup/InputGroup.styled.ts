@@ -1,11 +1,17 @@
 import { styled } from "styled-components";
 
-export const InputGroupStyled = styled.div<{ $isInvalid?: boolean }>`
+export const InputGroupStyled = styled.div<{ $isInvalid?: boolean; $isFocused: boolean }>`
 	display: flex;
 	height: 2.5rem;
-	border-bottom: ${props => {
-		return props.$isInvalid
+	cursor: pointer;
+	transition: all 220ms linear;
+	border-bottom: ${props =>
+		props.$isInvalid
 			? `1px solid ${props.theme.colors.inputErrorBorderBottom}`
-			: `1px solid ${props.theme.colors.inputBorderBottom}`;
-	}};
+			: `1px solid ${props.theme.colors.inputBorderBottom}`};
+
+	&:hover,
+	&:focus {
+		border-bottom: 1px solid ${props => props.theme.colors.inputBorderHoverColor};
+	}
 `;
