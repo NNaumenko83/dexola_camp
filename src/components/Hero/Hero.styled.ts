@@ -126,7 +126,7 @@ export const ImagesList = styled.ul`
 			top: 0;
 			left: -53.4375rem;
 			right: 0;
-			height: 1px; /* Товщина полоски */
+			height: 1px;
 			background-color: ${props => props.theme.colors.heroImagesListBorder}; /* Колір полоски */
 		}
 
@@ -138,7 +138,7 @@ export const ImagesList = styled.ul`
 			bottom: 0;
 			left: -53.4375rem;
 			right: 0;
-			height: 1px; /* Товщина полоски */
+			height: 1px;
 			background-color: ${props => props.theme.colors.heroImagesListBorder}; /* Колір полоски */
 		}
 	}

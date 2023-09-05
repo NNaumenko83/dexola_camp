@@ -28,11 +28,14 @@ export const JoinUsContainer = styled(ContainerStyled)`
 
 export const JoinUsSection = styled.section`
 	padding-top: 5.5625rem;
+	padding-bottom: 4.3125rem;
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		padding-top: 5.625rem;
+		padding-bottom: 4.75rem;
 	}
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		padding-top: 11.9375rem;
+		padding-bottom: 7.8125rem;
 	}
 `;

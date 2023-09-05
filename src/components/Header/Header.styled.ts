@@ -1,9 +1,6 @@
 import { styled } from "styled-components";
 
 export const HeaderContainer = styled.div`
-	/* position: fixed;
-	z-index: 2; */
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
